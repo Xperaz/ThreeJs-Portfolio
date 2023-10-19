@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.backgroundGradient {
+    --gradient-start: #121317;
+    --gradient-start-text: '#121317';
+    --gradient-end: #323B42;
+    --gradient-end-text: '#323B42';
+    background: linear-gradient(33deg, var(--gradient-start), var(--gradient-end));
+  }
