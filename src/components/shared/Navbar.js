@@ -6,7 +6,7 @@ import React from "react";
 
 const MyLink = ({ navLink, isActive }) => {
   return (
-    <li>
+    <li className="hover:text-[#ddd]">
       <Link
         className={`${
           isActive ? "border border-[#fff] px-2 py-1 rounded-full" : ""

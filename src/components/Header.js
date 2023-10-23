@@ -1,6 +1,5 @@
 import Navbar from "./shared/Navbar";
 import Image from "next/image";
-import logo from "@/../public/logo.png";
 import github from "@/../public/icons/github.svg";
 import linkden from "@/../public/icons/linkden.svg";
 import Link from "next/link";
@@ -8,8 +7,8 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header className="flex justify-around align-center mt-6 z-[999]">
-      <Link href={"/"}>
-        <Image src={logo} alt="Azedine Ouhadou Logo" width={100} height={50} />
+      <Link href={"/"} className={`font-BlackStone text-[45px] font-normal`}>
+        AOUHADOU
       </Link>
       <Navbar />
       <ul className="flex justify-between align-center gap-4 mt-4">

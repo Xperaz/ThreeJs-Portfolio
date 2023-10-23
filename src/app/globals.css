@@ -10,3 +10,10 @@
     --gradient-end-text: '#323B42';
     background: linear-gradient(33deg, var(--gradient-start), var(--gradient-end));
   }
+
+.center-model {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
