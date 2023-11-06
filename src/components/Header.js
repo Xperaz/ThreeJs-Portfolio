@@ -4,14 +4,31 @@ import github from "@/../public/icons/github.svg";
 import linkden from "@/../public/icons/linkden.svg";
 import Link from "next/link";
 
-const Header = () => {
+const Header = ({ updateCursorState }) => {
+  const textEnter = () => {
+    updateCursorState("text");
+  };
+
+  const textLeave = () => {
+    updateCursorState("default");
+  };
+
   return (
     <header className="flex justify-around align-center mt-6 z-[999]">
-      <Link href={"/"} className={`font-BlackStone text-[45px] font-normal`}>
+      <Link
+        href={"/"}
+        className={`font-BlackStone text-[45px] font-normal`}
+        onMouseEnter={textEnter}
+        onMouseLeave={textLeave}
+      >
         AOUHADOU
       </Link>
       <Navbar />
-      <ul className="flex justify-between align-center gap-4 mt-4">
+      <ul
+        className="flex justify-between align-center gap-4 mt-4"
+        onMouseEnter={textEnter}
+        onMouseLeave={textLeave}
+      >
         <Link href={"https://www.linkedin.com/in/azedineouhadou/"}>
           <Image
             src={linkden}

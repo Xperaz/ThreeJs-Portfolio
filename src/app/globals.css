@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .backgroundGradient {
     --gradient-start: #121317;
     --gradient-start-text: '#121317';
@@ -17,3 +16,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.title {
+  font-size: 10rem;
+}
+
+.cursor {
+  background-color: #fff;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  box-shadow: 0 0 20px #fff,
+  0 0 60px #fff,
+  0 0 100px #fff;
+}
+
+

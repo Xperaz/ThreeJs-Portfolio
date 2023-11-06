@@ -1,11 +1,9 @@
 import Header from "@/components/Header";
 
-const Dashboard = ({children}) => {
+const App = ({children}) => {
     console.log(children);
   return (
     <>
-        {/* <Header /> */}
-        <main className="">{children}</main>
     </>
   );
 };

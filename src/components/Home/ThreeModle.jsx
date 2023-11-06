@@ -25,8 +25,8 @@ const Light = ({vec = new Vector3(), ...props}) => {
       castShadow
       penumbra={1}
       distance={10}
-      angle={0.35}
-      intensity={3}
+      angle={0.4}
+      intensity={9}
       decay={2}
       {...props}
     />
@@ -43,7 +43,7 @@ const Experience = () => {
         minAzimuthAngle={-Math.PI * 0.5}
         maxAzimuthAngle={Math.PI * 0.5}
       />
-      <group position-y={-1.2} scale={1.1}>
+      <group position-y={-1.2} scale={1.2}>
         <group position-y={1}>
               <Light />
         </group>
