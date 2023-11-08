@@ -1,13 +1,17 @@
 "use client";
+import CursorContext from "@/context/CursorContext";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-import React from "react";
+import { useContext } from "react";
 
 const MyLink = ({ navLink, isActive }) => {
+  const { setCursorVariant } = useContext(CursorContext);
+
   return (
     <li className="hover:text-[#ddd]">
       <Link
+        onMouseEnter={() => setCursorVariant("navLinks")}
+        onMouseLeave={() => setCursorVariant("default")}
         className={`${
           isActive ? "border border-[#fff] px-2 py-1 rounded-full" : ""
         }`}
@@ -27,8 +31,8 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex flex-col justify-center rounded-full h-14 bg-[#6c6c6f] p-4 text-sm">
-      <ul className="flex justify-between align-center gap-10">
+    <nav className="flex flex-col justify-center rounded-full h-12 bg-[#6c6c6f]/75 p-3 px-5 text-sm">
+      <ul className="flex justify-between align-center gap-10 text-white">
         <MyLink navLink="Home" isActive={pathname === "/" ? true : false} />
         <MyLink
           navLink={"Projects"}

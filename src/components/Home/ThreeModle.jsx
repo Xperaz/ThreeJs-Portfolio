@@ -1,12 +1,11 @@
 "use client";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, SpotLight } from "@react-three/drei";
+import { OrbitControls, Preload, SpotLight } from "@react-three/drei";
 import { Avatar } from "./Avatar";
 import { Vector3 } from "three";
-import { useRef } from "react";
+import { Suspense, useRef } from "react";
 
-
-const Light = ({vec = new Vector3(), ...props}) => {
+export const Light = ({vec = new Vector3(), ...props}) => {
   const light = useRef(null);
 
   useFrame((state) => {
@@ -58,7 +57,10 @@ const ThreeModle = () => {
   return (
     <div className="center-model w-full h-full">
       <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }}>
-        <Experience />
+        <Suspense fallback={null} >
+          <Experience />
+        </Suspense>
+        <Preload all/>
       </Canvas>
     </div>
   );

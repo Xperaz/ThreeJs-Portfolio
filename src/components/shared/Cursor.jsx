@@ -25,21 +25,29 @@ const Cursor = ({cursorVariant}) => {
 
   const variants = {
     default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
+      x: mousePosition.x - 14,
+      y: mousePosition.y - 14,
     },
     text: {
       height: 80,
       width: 80,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
+      x: mousePosition.x - 40,
+      y: mousePosition.y - 40,
+      backgroundColor: "white",
+      mixBlendMode: "difference",
+    },
+    navLinks: {
+      height: 36,
+      width: 36,
+      x: mousePosition.x - 18,
+      y: mousePosition.y - 18,
       backgroundColor: "white",
       mixBlendMode: "difference",
     },
   };
 
   return (
-    <div className="z-50 ">
+    <div className="z-50">
       <motion.div
         className="cursor"
         variants={variants}
