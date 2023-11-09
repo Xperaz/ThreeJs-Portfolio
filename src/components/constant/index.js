@@ -12,7 +12,11 @@ import {
   figma,
   docker,
   threejs,
-} from "@/../public/icons";
+  inception,
+  transcendence,
+  minirt,
+  aouhadou,
+} from "../../../public";
 
 const technologies = [
   {
@@ -69,4 +73,105 @@ const technologies = [
   },
 ];
 
-export { technologies };
+const projects = [
+  {
+    title: "Aouhadou",
+    url: "https://github.com/Xperaz/ThreeJs-Portfolio",
+    image: aouhadou,
+    description: "Modern Portfolio with nextjs and threejs",
+    technologies_used: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Nextjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Threejs",
+        color: "blue-text-gradient",
+      },
+    ],
+  },
+  {
+    title: "Transcendence",
+    url: "https://github.com/Xperaz/ft_transcendence",
+    image: transcendence,
+    description:
+      "Modernly recreate the 1979 classic Pong, integrate it into a website, and turn it into a competitive gaming platform.",
+    technologies_used: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Nextjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Threejs",
+        color: "blue-text-gradient",
+      },
+    ],
+  },
+  {
+    title: "MinRt",
+    url: "https://github.com/Xperaz/ft_transcendence",
+    image: minirt,
+    description:
+      "This project is an introduction to the beautiful world of Raytracing. the miniRT is my first ray tracer coded in C, normed and humble but functional.",
+    technologies_used: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Nextjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Threejs",
+        color: "blue-text-gradient",
+      },
+    ],
+  },
+  {
+    title: "Inception",
+    url: "https://github.com/Xperaz/inception-42",
+    image: inception,
+    description:
+      "Creating a docker-based WordPress LEMP stack using docker-compose on Debian Buster.",
+    technologies_used: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Nextjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Threejs",
+        color: "blue-text-gradient",
+      },
+    ],
+  },
+];
+export { technologies, projects };

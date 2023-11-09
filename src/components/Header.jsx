@@ -9,7 +9,7 @@ import CursorContext from "@/context/CursorContext";
 import Logo from "./shared/Logo";
 
 const Header = () => {
-  const {setCursorVariant} = useContext(CursorContext);
+  const { setCursorVariant } = useContext(CursorContext);
 
   return (
     <div className="flex justify-around align-center mt-6 z-[999]">
@@ -18,9 +18,9 @@ const Header = () => {
         className={``}
         onMouseEnter={() => setCursorVariant("text")}
         onMouseLeave={() => setCursorVariant("default")}
-        >
+      >
         <Logo />
-      </Link> 
+      </Link>
       <Navbar />
       <ul
         className="flex justify-between align-center gap-4 mt-4"
