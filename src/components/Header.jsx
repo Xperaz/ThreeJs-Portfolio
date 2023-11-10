@@ -12,7 +12,7 @@ const Header = () => {
   const { setCursorVariant } = useContext(CursorContext);
 
   return (
-    <div className="flex justify-around align-center mt-6 z-[999]">
+    <div className="flex justify-around align-center mt-6 z-[995]">
       <Link
         href={"/"}
         className={``}

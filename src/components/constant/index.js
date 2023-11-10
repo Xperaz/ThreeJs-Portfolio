@@ -4,14 +4,15 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
   mongodb,
   git,
   figma,
   docker,
   threejs,
+  nextjs,
+  cpp,
+  c,
   inception,
   transcendence,
   minirt,
@@ -40,20 +41,20 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "C++",
+    icon: cpp,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "C",
+    icon: c,
   },
   {
     name: "Three JS",
@@ -82,19 +83,19 @@ const projects = [
     technologies_used: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        icon: reactjs,
       },
       {
         name: "Nextjs",
-        color: "pink-text-gradient",
+        icon: nextjs,
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        icon: tailwind,
       },
       {
         name: "Threejs",
-        color: "blue-text-gradient",
+        icon: threejs,
       },
     ],
   },
@@ -107,44 +108,44 @@ const projects = [
     technologies_used: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        icon: reactjs,
       },
       {
         name: "Nextjs",
-        color: "pink-text-gradient",
+        icon: nextjs,
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        icon: tailwind,
       },
       {
         name: "Threejs",
-        color: "blue-text-gradient",
+        icon: threejs,
       },
     ],
   },
   {
     title: "MinRt",
-    url: "https://github.com/Xperaz/ft_transcendence",
+    url: "https://github.com/Xperaz/minirt",
     image: minirt,
     description:
       "This project is an introduction to the beautiful world of Raytracing. the miniRT is my first ray tracer coded in C, normed and humble but functional.",
     technologies_used: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        icon: reactjs,
       },
       {
         name: "Nextjs",
-        color: "pink-text-gradient",
+        icon: nextjs,
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        icon: tailwind,
       },
       {
         name: "Threejs",
-        color: "blue-text-gradient",
+        icon: threejs,
       },
     ],
   },
@@ -157,19 +158,19 @@ const projects = [
     technologies_used: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        icon: reactjs,
       },
       {
         name: "Nextjs",
-        color: "pink-text-gradient",
+        icon: nextjs,
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        icon: tailwind,
       },
       {
         name: "Threejs",
-        color: "blue-text-gradient",
+        icon: threejs,
       },
     ],
   },

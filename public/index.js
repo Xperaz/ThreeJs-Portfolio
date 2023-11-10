@@ -11,6 +11,9 @@ import redux from "./icons/skills/redux.png";
 import tailwind from "./icons/skills/tailwind.png";
 import typescript from "./icons/skills/typescript.png";
 import threejs from "./icons/skills/threejs.svg";
+import nextjs from "./icons/skills/nextjs.svg";
+import cpp from "./icons/skills/cpp.svg";
+import c from "./icons/skills/c.svg";
 import inception from "./projects/inception.png";
 import transcendence from "./projects/transcendence.png";
 import minirt from "./projects/minirt.png";
@@ -30,6 +33,9 @@ export {
   figma,
   docker,
   threejs,
+  nextjs,
+  cpp,
+  c,
   inception,
   transcendence,
   minirt,

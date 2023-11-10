@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
-const Cursor = ({cursorVariant}) => {
+const Cursor = ({ cursorVariant }) => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
@@ -33,7 +33,7 @@ const Cursor = ({cursorVariant}) => {
       width: 80,
       x: mousePosition.x - 40,
       y: mousePosition.y - 40,
-      backgroundColor: "white",
+      backgroundColor: "#fff",
       mixBlendMode: "difference",
     },
     navLinks: {
@@ -58,8 +58,3 @@ const Cursor = ({cursorVariant}) => {
 };
 
 export default Cursor;
-  
-  
-  
-  
-  

@@ -14,7 +14,7 @@ const Projects = () => {
     <>
       <div className="z-50">
         <CursorContext.Provider value={cursorInfo}>
-          <Cursor cursorVariant={cursorVariant} />
+          {/* <Cursor cursorVariant={cursorVariant} /> */}
           <Header />
           <ShowCase />
         </CursorContext.Provider>

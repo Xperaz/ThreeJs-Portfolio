@@ -5,7 +5,7 @@ import { Avatar } from "./Avatar";
 import { Vector3 } from "three";
 import { Suspense, useRef } from "react";
 
-export const Light = ({vec = new Vector3(), ...props}) => {
+export const Light = ({ vec = new Vector3(), ...props }) => {
   const light = useRef(null);
 
   useFrame((state) => {
@@ -14,8 +14,10 @@ export const Light = ({vec = new Vector3(), ...props}) => {
     const lightPosition = mousePosition.clone().normalize().multiplyScalar(2);
 
     // Update the light's position and target
-    light.current.position.copy(lightPosition);
-    light.current.target.position.copy(mousePosition);
+    if (light.current) {
+      light.current.position.copy(lightPosition);
+      light.current.target.position.copy(mousePosition);
+    }
   });
 
   return (
@@ -23,9 +25,9 @@ export const Light = ({vec = new Vector3(), ...props}) => {
       ref={light}
       castShadow
       penumbra={1}
-      distance={10}
+      distance={8}
       angle={0.4}
-      intensity={9}
+      intensity={5}
       decay={2}
       {...props}
     />
@@ -42,9 +44,9 @@ const Experience = () => {
         minAzimuthAngle={-Math.PI * 0.5}
         maxAzimuthAngle={Math.PI * 0.5}
       />
-      <group position-y={-1.2} scale={1.2}>
-        <group position-y={1}>
-              <Light />
+      <group position-y={-1.6} scale={1.4}>
+        <group position-y={1.2}>
+          <Light />
         </group>
         <Avatar />
       </group>
@@ -57,10 +59,10 @@ const ThreeModle = () => {
   return (
     <div className="center-model w-full h-full">
       <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }}>
-        <Suspense fallback={null} >
+        <Suspense fallback={null}>
           <Experience />
         </Suspense>
-        <Preload all/>
+        <Preload all />
       </Canvas>
     </div>
   );
