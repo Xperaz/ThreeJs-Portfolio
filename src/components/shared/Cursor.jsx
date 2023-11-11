@@ -27,12 +27,13 @@ const Cursor = ({ cursorVariant }) => {
     default: {
       x: mousePosition.x - 14,
       y: mousePosition.y - 14,
+      opacity: 0.6,
     },
     text: {
-      height: 80,
-      width: 80,
-      x: mousePosition.x - 40,
-      y: mousePosition.y - 40,
+      height: 70,
+      width: 70,
+      x: mousePosition.x - 35,
+      y: mousePosition.y - 35,
       backgroundColor: "#fff",
       mixBlendMode: "difference",
     },
