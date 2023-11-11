@@ -5,7 +5,6 @@ import {
   css,
   reactjs,
   tailwind,
-  mongodb,
   git,
   figma,
   docker,
@@ -13,10 +12,22 @@ import {
   nextjs,
   cpp,
   c,
+  gnu,
+  framerMotion,
+  bash,
+  nestjs,
+  postgres,
+  prisma,
+  dockerCompose,
   inception,
   transcendence,
   minirt,
   aouhadou,
+  fractol,
+  irc,
+  philosophers,
+  minishell,
+  coffeeShop,
 } from "../../../public";
 
 const technologies = [
@@ -57,8 +68,8 @@ const technologies = [
     icon: c,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Bash",
+    icon: bash,
   },
   {
     name: "git",
@@ -76,101 +87,188 @@ const technologies = [
 
 const projects = [
   {
-    title: "Aouhadou",
+    title: "Azedine Ouhadou Portfolio",
     url: "https://github.com/Xperaz/ThreeJs-Portfolio",
+    projectLocation: "Visit live demo",
     image: aouhadou,
-    description: "Modern Portfolio with nextjs and threejs",
-    technologies_used: [
+    technologiesUsed: [
       {
-        name: "react",
+        name: "react Js",
         icon: reactjs,
       },
       {
-        name: "Nextjs",
+        name: "Next Js",
         icon: nextjs,
       },
       {
-        name: "tailwind",
+        name: "tailwind Css",
         icon: tailwind,
       },
       {
-        name: "Threejs",
+        name: "Three Js",
         icon: threejs,
+      },
+      {
+        name: "Framer Motion",
+        icon: framerMotion,
       },
     ],
   },
   {
-    title: "Transcendence",
+    title: "Transcendence: Competitive pong game platform.",
     url: "https://github.com/Xperaz/ft_transcendence",
+    projectLocation: "Visit project repository",
+    projectLocation: "Visit project repository",
     image: transcendence,
-    description:
-      "Modernly recreate the 1979 classic Pong, integrate it into a website, and turn it into a competitive gaming platform.",
-    technologies_used: [
+    technologiesUsed: [
       {
-        name: "react",
+        name: "react Js",
         icon: reactjs,
       },
       {
-        name: "Nextjs",
+        name: "Next Js",
         icon: nextjs,
       },
       {
-        name: "tailwind",
+        name: "tailwind Css",
         icon: tailwind,
       },
       {
-        name: "Threejs",
-        icon: threejs,
+        name: "Nest JS",
+        icon: nestjs,
+      },
+      {
+        name: "Postgresql",
+        icon: postgres,
+      },
+      {
+        name: "Prisma",
+        icon: prisma,
       },
     ],
   },
   {
-    title: "MinRt",
+    title: "MinRt: Raytracing engine wrote in C.",
     url: "https://github.com/Xperaz/minirt",
+    projectLocation: "Visit project repository",
     image: minirt,
-    description:
-      "This project is an introduction to the beautiful world of Raytracing. the miniRT is my first ray tracer coded in C, normed and humble but functional.",
-    technologies_used: [
+    technologiesUsed: [
       {
-        name: "react",
-        icon: reactjs,
+        name: "C",
+        icon: c,
       },
       {
-        name: "Nextjs",
-        icon: nextjs,
-      },
-      {
-        name: "tailwind",
-        icon: tailwind,
-      },
-      {
-        name: "Threejs",
-        icon: threejs,
+        name: "Gnu",
+        icon: gnu,
       },
     ],
   },
   {
-    title: "Inception",
+    title: "Fractol: Creating graphically beautiful fractals.",
+    url: "https://github.com/Xperaz/Fractol",
+    projectLocation: "Visit project repository",
+    image: fractol,
+    technologiesUsed: [
+      {
+        name: "C",
+        icon: c,
+      },
+      {
+        name: "Gnu",
+        icon: gnu,
+      },
+    ],
+  },
+  {
+    title: "Inception: Create LEMP stack using docker-compose on debian",
     url: "https://github.com/Xperaz/inception-42",
+    projectLocation: "Visit project repository",
     image: inception,
-    description:
-      "Creating a docker-based WordPress LEMP stack using docker-compose on Debian Buster.",
-    technologies_used: [
+    technologiesUsed: [
       {
-        name: "react",
-        icon: reactjs,
+        name: "Docker",
+        icon: docker,
       },
       {
-        name: "Nextjs",
-        icon: nextjs,
+        name: "Docker Compose",
+        icon: dockerCompose,
       },
       {
-        name: "tailwind",
-        icon: tailwind,
+        name: "Bash Scripting",
+        icon: bash,
+      },
+    ],
+  },
+  {
+    title: "Ft_IRC: Simple IRC Server based on the RFC.",
+    url: "https://github.com/Xperaz/ft_irc",
+    projectLocation: "Visit project repository",
+    image: irc,
+    technologiesUsed: [
+      {
+        name: "C++",
+        icon: cpp,
       },
       {
-        name: "Threejs",
-        icon: threejs,
+        name: "C",
+        icon: c,
+      },
+      {
+        name: "Gnu",
+        icon: gnu,
+      },
+    ],
+  },
+  {
+    title: "Minishell: Recoding our own little bash",
+    url: "https://github.com/cclaude42/minishell",
+    projectLocation: "Visit project repository",
+    image: minishell,
+    technologiesUsed: [
+      {
+        name: "C",
+        icon: c,
+      },
+      {
+        name: "Gnu",
+        icon: gnu,
+      },
+    ],
+  },
+  {
+    title:
+      "Philosophers: A classic Dining philosophers problem solved with a multithreaded program.",
+    url: "https://github.com/Xperaz/philosopher_42",
+    projectLocation: "Visit project repository",
+    image: philosophers,
+    technologiesUsed: [
+      {
+        name: "C",
+        icon: c,
+      },
+      {
+        name: "Gnu",
+        icon: gnu,
+      },
+    ],
+  },
+  {
+    title: "Coffee Shop: Web app using vanilla javascript",
+    url: "https://coffee-shop-dun-delta.vercel.app/",
+    projectLocation: "Visit live demo",
+    image: coffeeShop,
+    technologiesUsed: [
+      {
+        name: "HTML",
+        icon: html,
+      },
+      {
+        name: "CSS",
+        icon: css,
+      },
+      {
+        name: "Javascript",
+        icon: javascript,
       },
     ],
   },

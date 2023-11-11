@@ -4,20 +4,29 @@ import figma from "./icons/skills/figma.png";
 import git from "./icons/skills/git.png";
 import html from "./icons/skills/html.png";
 import javascript from "./icons/skills/javascript.png";
-import mongodb from "./icons/skills/mongodb.png";
-import nodejs from "./icons/skills/nodejs.png";
 import reactjs from "./icons/skills/reactjs.png";
-import redux from "./icons/skills/redux.png";
 import tailwind from "./icons/skills/tailwind.png";
 import typescript from "./icons/skills/typescript.png";
 import threejs from "./icons/skills/threejs.svg";
 import nextjs from "./icons/skills/nextjs.svg";
 import cpp from "./icons/skills/cpp.svg";
 import c from "./icons/skills/c.svg";
-import inception from "./projects/inception.png";
-import transcendence from "./projects/transcendence.png";
-import minirt from "./projects/minirt.png";
+import bash from "./icons/skills/bash.png";
+import framerMotion from "./icons/skills/framerMotion.svg";
+import gnu from "./icons/skills/gnu.png";
+import nestjs from "./icons/skills/nestjs.png";
+import postgres from "./icons/skills/postgres.png";
+import prisma from "./icons/skills/prisma.png";
+import dockerCompose from "./icons/skills/dockerCompose.png";
+import inception from "./projects/inception.webp";
+import transcendence from "./projects/transcendence.gif";
+import minirt from "./projects/minirt.jpg";
 import aouhadou from "./projects/aouhadou.png";
+import fractol from "./projects/fractol.gif";
+import irc from "./projects/irc.webp";
+import philosophers from "./projects/philosophers.webp";
+import minishell from "./projects/minishell.jpg";
+import coffeeShop from "./projects/coffeeShop.png";
 
 export {
   javascript,
@@ -25,10 +34,7 @@ export {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
   docker,
@@ -36,8 +42,20 @@ export {
   nextjs,
   cpp,
   c,
+  gnu,
+  framerMotion,
+  bash,
+  nestjs,
+  postgres,
+  prisma,
+  dockerCompose,
   inception,
   transcendence,
   minirt,
   aouhadou,
+  fractol,
+  irc,
+  philosophers,
+  minishell,
+  coffeeShop,
 };
