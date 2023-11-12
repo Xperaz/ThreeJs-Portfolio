@@ -220,8 +220,8 @@ const projects = [
     ],
   },
   {
-    title: "Minishell: Recoding our own little bash",
-    url: "https://github.com/cclaude42/minishell",
+    title: "Minishell: Recoding our own little bash.",
+    url: "https://github.com/Xperaz/minishell",
     projectLocation: "Visit project repository",
     image: minishell,
     technologiesUsed: [

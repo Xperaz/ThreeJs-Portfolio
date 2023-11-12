@@ -5,7 +5,7 @@ import { Suspense } from "react";
 
 const ContactModel = () => {
   return (
-    <div className="w-full h-full center-model">
+    <div className="w-full h-full contact-model">
       <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }}>
         <OrbitControls
           enableZoom={false}

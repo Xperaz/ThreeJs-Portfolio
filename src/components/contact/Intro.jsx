@@ -42,7 +42,7 @@ const Intro = () => {
         transition={{
           duration: 1.5,
         }}
-        className="text-[20px] font-light"
+        className="text-[18px] font-light"
         onMouseEnter={() => setCursorVariant("text")}
         onMouseLeave={() => setCursorVariant("default")}
       >
