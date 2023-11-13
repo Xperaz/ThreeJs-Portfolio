@@ -95,7 +95,7 @@ const Form = () => {
       <div className="relative w-full">
         <button
           type="submit"
-          className="w-full bg-[#5272F2] text-white text-[20px] p-1 rounded-md outline-none"
+          className="w-full bg-[#da4ea2] text-white text-[20px] p-1 rounded-md outline-none"
         >
           send
         </button>

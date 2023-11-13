@@ -2,6 +2,7 @@
 import { useState } from "react";
 import CursorContext from "@/context/CursorContext";
 import Header from "../Header";
+import AboutMe from "./AboutMe";
 
 const About = () => {
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -9,6 +10,7 @@ const About = () => {
   return (
     <CursorContext.Provider value={cursorInfo}>
       <Header />
+      <AboutMe />
     </CursorContext.Provider>
   );
 };

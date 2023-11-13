@@ -18,6 +18,7 @@
     "@react-three/fiber": "^8.15.1",
     "@types/three": "^0.157.2",
     "framer-motion": "^10.16.4",
+    "gsap": "^3.12.2",
     "jotai": "^2.5.1",
     "leva": "^0.9.35",
     "next": "13.5.6",

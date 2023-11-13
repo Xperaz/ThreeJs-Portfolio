@@ -6,7 +6,7 @@ const Intro = () => {
   const { setCursorVariant } = useContext(CursorContext);
 
   return (
-    <div className="flex flex-col items-start justify-center lg:mx-64">
+    <div className="flex flex-col items-start justify-center lg:mx-64 gap-1 mt-6">
       <motion.h2
         initial={{
           z: -500,
