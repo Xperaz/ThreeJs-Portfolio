@@ -8,7 +8,7 @@ const ShowCase = () => {
   const { setCursorVariant } = useContext(CursorContext);
 
   return (
-    <div className="flex flex-col justify-center items-center gap-6 mx-28">
+    <div className="flex flex-col justify-center items-center gap-6 lg:mx-28">
       <motion.h2
         initial={{
           z: -500,
@@ -29,7 +29,7 @@ const ShowCase = () => {
         My Projects
       </motion.h2>
 
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-6 ">
         {projects.map((project, index) => (
           <Project key={"projec_" + index} index={index} {...project} />
         ))}

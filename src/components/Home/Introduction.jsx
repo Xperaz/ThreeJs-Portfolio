@@ -14,9 +14,9 @@ const Introduction = () => {
   }
 
   return (
-    <div className='center-model w-full mt-10'>
+    <div className='w-full absolute top-[60%]'>
       <div
-        className='flex flex-col justify-between items-start m-auto mx-64 z-50'>
+        className='flex flex-col justify-between items-start m-auto lg:mx-64 z-50 mx-10'>
           <motion.h2
             initial={{
               z: -500,

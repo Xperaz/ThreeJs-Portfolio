@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div className="text-white w-full min-h-[100vh] flex flex-col align-center justify-between gap-2 backgroundGradient">
-      <ThreeModle />
+        <ThreeModle />
       <div className="z-50">
         <CursorContext.Provider value={cursorInfo}>
           <Header />

@@ -25,7 +25,7 @@ const Card = ({
     >
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-[#6c6c6f]/50 rounded-2xl sm:w-[230px] max-h-[150px]"
+        className="bg-[#6c6c6f]/50 rounded-2xl w-[250px] h-[150px] md:w-[230px]"
       >
         <div className="relative h-full w-full">
           <Image
@@ -34,8 +34,10 @@ const Card = ({
             alt={title + " image"}
             width={0}
             height={0}
-            sizes="100vw"
-            style={{ width: "230px", height: "150px" }}
+            layout="fill"
+            objectFit="cover"
+            // sizes="100vw"
+            // style={{ width: "250px", height: "150px" } }
           />
         </div>
       </Tilt>
@@ -81,7 +83,7 @@ const Project = ({
               width={0}
               height={0}
               sizes="100vw"
-              style={{ width: "100%", height: "50vh" }}
+              style={{ width: "100%", height: "30vh" }}
               priority={false}
             />
           </div>

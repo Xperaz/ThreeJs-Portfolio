@@ -27,7 +27,7 @@ export const Light = ({ vec = new Vector3(), ...props }) => {
       penumbra={1}
       distance={8}
       angle={0.4}
-      intensity={5}
+      intensity={4}
       decay={2}
       {...props}
     />

@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const TechSkills = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-8 mx-80">
+    <div className="flex flex-row flex-wrap justify-center gap-8 lg:mx-80 mx-4">
       {technologies.map((technology, i) => (
         <motion.div
           key={technology.name}

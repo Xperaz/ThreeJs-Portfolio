@@ -11,12 +11,12 @@ const Contact = () => {
   const cursorInfo = { cursorVariant, setCursorVariant };
   return (
     <CursorContext.Provider value={cursorInfo}>
-      <div className="z-50">
-        <Cursor cursorVariant={cursorVariant} />
-        <Header />
-        <Intro />
-      </div>
-      <ContactContainer />
+        <div className="z-50">
+          <Cursor cursorVariant={cursorVariant} />
+          <Header />
+          <Intro />
+        </div>
+        <ContactContainer />
     </CursorContext.Provider>
   );
 };
