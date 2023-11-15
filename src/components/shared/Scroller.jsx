@@ -1,8 +1,36 @@
+'use client'
+import { useState } from "react";
+import { useEffect } from "react";
+
 const Scroller = () => {
+  const [hideScrollIcon, setHideScrollIcon] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isAtEnd = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      setHideScrollIcon(isAtEnd);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="fixed right-20 bottom-12">
-      <div className="mouse-scroll"></div>
-    </div>
+    <>
+      { !hideScrollIcon &&
+        <div className="scroll-container flex flex-col gap-16">
+          <div className="mouse-scroll"></div>
+          <div className="arrow-scroll">
+            <div className="arrow" />
+            <div className="arrow" />
+            <div className="arrow" />
+          </div>
+        </div>
+      }
+    </>
   );
 };
 

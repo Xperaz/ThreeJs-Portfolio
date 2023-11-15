@@ -5,6 +5,7 @@ import Introduction from "@/components/Home/Introduction";
 import Cursor from "@/components/shared/Cursor";
 import { useState } from "react";
 import CursorContext from "@/context/CursorContext";
+import Cv from "@/components/shared/Cv";
 
 export default function Home() {
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -17,6 +18,9 @@ export default function Home() {
           <CursorContext.Provider value={cursorInfo}>
             <Header />
             <Introduction />
+            <div className="home-cv">
+              <Cv />
+            </div>
             <Cursor cursorVariant={cursorVariant} />
           </CursorContext.Provider>
         </div>
