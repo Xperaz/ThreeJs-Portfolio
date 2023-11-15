@@ -34,7 +34,7 @@ const Skills = () => {
                   }}
                   onMouseEnter={() => setCursorVariant('text')} 
                   onMouseLeave={() => setCursorVariant('default')}
-                  className='font-BlackStone text-[36px] font-normal'
+                  className='font-BlackStone text-[36px] xl:text-[45px] font-normal'
                 >
                     My Tech Skills
                 </motion.h2>

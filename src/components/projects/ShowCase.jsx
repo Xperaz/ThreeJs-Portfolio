@@ -8,31 +8,33 @@ const ShowCase = () => {
   const { setCursorVariant } = useContext(CursorContext);
 
   return (
-    <div className="flex flex-col justify-center items-center gap-6 lg:mx-28">
-      <motion.h2
-        initial={{
-          z: -500,
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          z: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{
-          duration: 1.5,
-          delay: 1,
-        }}
-        className="font-BlackStone text-[36px] font-normal my-4"
-      >
-        My Projects
-      </motion.h2>
+    <div className="md:flex md:justify-center md:items-center md:w-full md:h-[90vh]">
+      <div className="flex flex-col justify-center items-center gap-6 lg:mx-28">
+        <motion.h2
+          initial={{
+            z: -500,
+            opacity: 0,
+            scale: 0.5,
+          }}
+          animate={{
+            z: 0,
+            opacity: 1,
+            scale: 1,
+          }}
+          transition={{
+            duration: 1.5,
+            delay: 1,
+          }}
+          className="font-BlackStone text-[36px] xl:text-[45px] font-normal my-4"
+        >
+          My Projects
+        </motion.h2>
 
-      <div className="flex flex-wrap justify-center gap-6 ">
-        {projects.map((project, index) => (
-          <Project key={"projec_" + index} index={index} {...project} />
-        ))}
+        <div className="flex flex-wrap justify-center gap-6 mb-4">
+          {projects.map((project, index) => (
+            <Project key={"projec_" + index} index={index} {...project} />
+          ))}
+        </div>
       </div>
     </div>
   );

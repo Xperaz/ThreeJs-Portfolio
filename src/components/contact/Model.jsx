@@ -13,7 +13,7 @@ export function Model() {
 
   useEffect(() => {
     setWhenAnimate(-Math.PI / 2);
-    actions["Talking"].reset().fadeIn(0.5).play();
+    actions["Talking"].reset().fadeIn(0.6).play();
   }, []);
 
   return (

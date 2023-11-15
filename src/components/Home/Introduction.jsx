@@ -14,7 +14,7 @@ const Introduction = () => {
   }
 
   return (
-    <div className='w-full absolute top-[60%]'>
+    <div className='w-full absolute introduction'>
       <div
         className='flex flex-col justify-between items-start m-auto lg:mx-64 z-50 mx-10'>
           <motion.h2

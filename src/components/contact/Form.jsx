@@ -53,10 +53,10 @@ const Form = () => {
   return (
     <form
       ref={form}
-      className="flex flex-col justify-center items-start gap-3 w-full my-4"
+      className="flex flex-col justify-center items-start gap-3 w-full lg:w-[30vw] lg:ml-64 my-4 mx-4 md:mx-8 "
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="relative flex flex-col gap-1 justify-center items-start w-full">
+      <div className="relative flex flex-col gap-1 justify-center items-start w-full lg:w-full">
         <label>Name</label>
         <input
           type="text"

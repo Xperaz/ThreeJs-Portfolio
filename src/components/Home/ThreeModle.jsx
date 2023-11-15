@@ -50,7 +50,7 @@ const Experience = () => {
         </group>
         <Avatar />
       </group>
-      <ambientLight intensity={0.1} />
+      <ambientLight intensity={0.01} />
     </>
   );
 };

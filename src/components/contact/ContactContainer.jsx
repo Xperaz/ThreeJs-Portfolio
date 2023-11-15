@@ -3,7 +3,7 @@ import Intro from "./Intro";
 
 const ContactContainer = () => {
   return (
-    <div className="flex flex-col justify-center gap-4">
+    <div className="">
       <ContactForm />
     </div>
   );

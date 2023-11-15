@@ -8,7 +8,7 @@ const Logo = () => {
     
     return (
       <div ref={animationRef} className='z-50'>
-            <svg width="220" height="50" viewBox="0 0 279 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg  className="w-[140px] h-[40px] lg:w-[250px] lg:h-[50px] m-0" viewBox="0 0 279 76" fill="none" xmlns="http://www.w3.org/2000/svg">
               <motion.path
                 initial={{pathLength: 0}}
                 animate={isInView && {pathLength: 1}}

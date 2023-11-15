@@ -10,14 +10,16 @@ const Contact = () => {
   const [cursorVariant, setCursorVariant] = useState("default");
   const cursorInfo = { cursorVariant, setCursorVariant };
   return (
-    <CursorContext.Provider value={cursorInfo}>
-        <div className="z-50">
-          <Cursor cursorVariant={cursorVariant} />
-          <Header />
-          <Intro />
-        </div>
-        <ContactContainer />
-    </CursorContext.Provider>
+      <CursorContext.Provider value={cursorInfo}>
+          <div className="z-50">
+            <Cursor cursorVariant={cursorVariant} />
+            <Header />
+            <div className="lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-full lg:h-[90vh]">
+              <Intro />
+              <ContactContainer />
+            </div>
+          </div>
+      </CursorContext.Provider>
   );
 };
 
