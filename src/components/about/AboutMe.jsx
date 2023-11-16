@@ -1,6 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import profile from "@/../public/personal/profile.jpeg"
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   const sectionRef = useRef(null);
@@ -36,10 +39,21 @@ const AboutMe = () => {
     <section className="overflow-hidden">
       <div ref={triggerRef}>
         <div ref={sectionRef} className="h-[100vh] w-[800vw] flex relative">
-          <div className="about-scroll-section">
+          <motion.div initial={{opacity: 0, y: 100}}
+      animate={{ opacity: 1, y: 0}}
+      transition={{
+        delay: 0.3,
+        duration: 0.6
+      }}className="about-scroll-section">
+            <div className="relative ">
+              <Image src={profile} alt="azedine ouhadou profile picture" width={192} height={192} priority={true} quality={95} 
+                className="h-24 w-24 sm:h-32 sm:w-32 object-fit rounded-full border-[0.3rem] border-white shadow-md mb-2" 
+              />
+              <span className="text-2xl sm:text-4xl absolute bottom-0 right-4">👋🏻</span>
+            </div>
             <h3>Azedine Ouhadou</h3>
             <p>Software Engineer</p>
-          </div>
+          </motion.div>
           <div className="about-scroll-section">
             <h3>Front-End Developer</h3>
             <p>Focused on React and Next.js</p>

@@ -22,7 +22,6 @@ const Scroller = () => {
     <>
       { !hideScrollIcon &&
         <div className="scroll-container flex flex-col gap-16">
-          <div className="mouse-scroll"></div>
           <div className="arrow-scroll">
             <div className="arrow" />
             <div className="arrow" />
