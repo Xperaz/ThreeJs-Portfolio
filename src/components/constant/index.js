@@ -28,6 +28,16 @@ import {
   philosophers,
   minishell,
   coffeeShop,
+  js,
+  html5,
+  css3,
+  types,
+  react,
+  tailwindcss,
+  cppSkill,
+  cSkill,
+  gitSkill,
+  dockerSkill
 } from "../../../public";
 
 const technologies = [
@@ -82,6 +92,68 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
+  },
+];
+
+const skills = [
+  {
+    name: "HTML 5",
+    icon: html5,
+    style: 'html',
+  },
+  {
+    name: "CSS 3",
+    icon: css3,
+    style: 'css'
+  },
+  {
+    name: "JavaScript",
+    icon: js,
+    style: 'js'
+  },
+  {
+    name: "TypeScript",
+    icon: types,
+    style: 'typescript'
+  },
+  {
+    name: "React JS",
+    icon: react,
+    style: 'react'
+  },
+  {
+    name: "Next JS",
+    icon: nextjs,
+    style: 'nextjs',
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwindcss,
+    style: 'tailwind'
+  },
+  {
+    name: "C++",
+    icon: cppSkill,
+    style: 'cppSkill'
+  },
+  {
+    name: "C",
+    icon: cSkill,
+    style: 'cppSkill'
+  },
+  // {
+  //   name: "Bash",
+  //   icon: bash,
+  // },
+  {
+    name: "git",
+    icon: gitSkill,
+    style: "git"
+  },
+  {
+    name: "docker",
+    icon: dockerSkill,
+    style: 'cppSkill'
   },
 ];
 
@@ -273,4 +345,4 @@ const projects = [
     ],
   },
 ];
-export { technologies, projects };
+export { technologies, skills, projects };

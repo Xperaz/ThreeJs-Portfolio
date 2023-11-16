@@ -94,6 +94,50 @@
   animation-duration: 0.8s;
 }
 
+/* blur hover effects */
+
+.js:hover {
+  filter: invert(0.2) sepia(2) saturate(4) brightness(3) drop-shadow(0 0 1rem rgb(249, 212, 0));
+  fill: yellow;
+}
+
+
+.nextjs:hover {
+  filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+}
+
+.html:hover {
+  filter: invert(0.4) sepia(2) saturate(5) brightness(1) hue-rotate(1deg) drop-shadow(0 0 1rem rgb(255, 174, 22));
+  fill: orange;
+}
+
+.css:hover {
+  filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg) drop-shadow(0 0 1rem rgb(1, 154, 243));
+}
+
+.typescript:hover {
+  filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg) drop-shadow(0 0 1rem rgb(1, 154, 243));
+}
+
+.react:hover {
+  filter: invert(.4) sepia(1) saturate(5) hue-rotate(178deg) drop-shadow(0 0 1rem rgb(1, 154, 243));
+}
+
+.tailwind:hover {
+  filter: invert(.3) sepia(1) saturate(5) hue-rotate(175deg) drop-shadow(0 0 1rem rgb(31, 184, 213));
+}
+
+.cppSkill:hover {
+  filter: invert(.5) sepia(1) saturate(10) hue-rotate(178deg) drop-shadow(0 0 1rem rgb(1, 154, 243));
+}
+
+.git:hover {
+  filter: invert(0.4) sepia(2) saturate(5) brightness(1) hue-rotate(1deg) drop-shadow(0 0 1rem rgb(255, 174, 22));
+  fill: orange;
+}
+
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -39,7 +39,7 @@ const Skills = () => {
                     My Tech Skills
                 </motion.h2>
                 <TechSkills />
-                <div className='flex flex-col justify-center items-center gap-3 mb-8 mx-4 md:mx-10'>
+                {/* <div className='flex flex-col justify-center items-center gap-3 mb-8 mx-4 md:mx-10'>
                   <h2 
                     className='text-[24px] font-semibold text-[#F1D302]'
                     onMouseEnter={() => setCursorVariant('text')} 
@@ -54,7 +54,7 @@ const Skills = () => {
                   >
                     While the world searches for profound truths, I&apos;m here fixing those pesky missing semicolons. Coding is my art, and I turn caffeine into creativity, one line at a time.
                   </p>
-                </div>
+                </div> */}
                 
               </div>
 

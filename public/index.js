@@ -28,6 +28,17 @@ import philosophers from "./projects/philosophers.webp";
 import minishell from "./projects/minishell.jpg";
 import coffeeShop from "./projects/coffeeShop.png";
 
+import js from './skills/javascript.svg';
+import html5 from './skills/html.svg';
+import css3 from './skills/css.svg';
+import types from './skills/typescript.svg';
+import react from './skills/react.svg';
+import tailwindcss from './skills/tailwindcss.svg';
+import cppSkill from './skills/cppSkill.svg';
+import cSkill from './skills/cSkill.svg';
+import gitSkill from './skills/git.svg';
+import dockerSkill from './skills/dockerSkill.svg';
+
 export {
   javascript,
   typescript,
@@ -58,4 +69,14 @@ export {
   philosophers,
   minishell,
   coffeeShop,
+  js,
+  html5,
+  css3,
+  types,
+  react,
+  tailwindcss,
+  cppSkill,
+  cSkill,
+  gitSkill,
+  dockerSkill
 };
