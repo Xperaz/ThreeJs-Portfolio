@@ -11,11 +11,11 @@ const Skills = () => {
   const cursorInfo = { cursorVariant, setCursorVariant };
   
     return (
-        <div className='z-50' >
+        <div className='' >
           <CursorContext.Provider value={cursorInfo}>
+              <Cursor cursorVariant={cursorVariant}/>
             <Header />
             <div className='xl:flex xl:justify-center xl:items-center xl:w-full xl:h-[90vh]'>
-              <Cursor cursorVariant={cursorVariant}/>
               <div className='flex flex-col justify-center items-center gap-10 my-5'>
                 <motion.h2 
                   initial={{

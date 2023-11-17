@@ -9,7 +9,7 @@ const About = () => {
   const cursorInfo = { cursorVariant, setCursorVariant };
   return (
     <CursorContext.Provider value={cursorInfo}>
-      <Header />
+        <Header />
       <AboutMe />
     </CursorContext.Provider>
   );
