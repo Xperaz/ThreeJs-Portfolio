@@ -22,6 +22,7 @@ export function Avatar() {
       target = new Vector3(0, 0.8159999999999999, 1);
     }
     group.current.getObjectByName("Head").lookAt(target);
+    group.current.getObjectByName("Neck").lookAt(target);
   });
 
   useEffect(() => {

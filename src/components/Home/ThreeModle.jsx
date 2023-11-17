@@ -1,6 +1,6 @@
 "use client";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Preload, SpotLight } from "@react-three/drei";
+import { OrbitControls, Preload } from "@react-three/drei";
 import { Avatar } from "./Avatar";
 import { Vector3 } from "three";
 import { Suspense, useRef } from "react";
@@ -25,7 +25,7 @@ export const Light = ({ vec = new Vector3(), ...props }) => {
       ref={light}
       castShadow
       penumbra={1}
-      distance={4}
+      distance={5}
       angle={0.3}
       intensity={10}
       decay={2}
