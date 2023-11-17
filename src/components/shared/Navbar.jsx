@@ -74,9 +74,9 @@ const Navbar = () => {
           <div
               className={`${
                 !toggle ? "hidden" : "flex flex-col"
-              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[160px] z-[999] rounded-xl sidebar`}
+              } p-6 bg-[#6c6c6f] absolute top-20 right-0 mx-4 my-2 min-w-[160px] z-[999] rounded-xl sidebar`}
             >
-              <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+              <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4 bg-black/'>
               <MyLink navLink="Home" isActive={pathname === "/" ? true : false} />
             <MyLink
               navLink={"Projects"}

@@ -48,7 +48,7 @@ const Introduction = () => {
             transition={{
               duration: 1.5,
             }} 
-            className='text-[16px] font-light' onMouseEnter={textEnter} onMouseLeave={textLeave} >I am Azedine Ouhadou, a Software Engineer focuses on Front-End. My code is where creativity meets precision. Explore my skills, projects, and journey in About Me. If we align, let&apos;s craft digital masterpieces together at Hire Me.</motion.p>
+            className='text-[16px] sm:text-[18px] font-light leading-7' onMouseEnter={textEnter} onMouseLeave={textLeave} >I am Azedine Ouhadou, a Software Engineer focused on Front-End. I enjoy building stunning and user-friendly website building . Explore my skills, projects, and journey in About Me. If you're interested in working with me, please feel free to get in touch with me.</motion.p>
       </div>
     </div>
   )

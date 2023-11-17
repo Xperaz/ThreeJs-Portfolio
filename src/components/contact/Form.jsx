@@ -62,7 +62,7 @@ const Form = () => {
           type="text"
           name="name"
           placeholder="your name"
-          className="rounded-md p-2 w-full text-black"
+          className="rounded-md p-2 w-full text-black outline-none"
           {...register("name")}
         />
         {errors.name && <p className="text-red-500">{errors.name?.message}</p>}
@@ -72,7 +72,7 @@ const Form = () => {
         <input
           type="text"
           name="email"
-          className="rounded-md p-2 w-full text-black"
+          className="rounded-md p-2 w-full text-black outline-none"
           placeholder="email@example.com"
           {...register("email")}
         />
@@ -83,7 +83,7 @@ const Form = () => {
       <div className="flex flex-col gap-1 justify-center items-start relative w-full">
         <label>Message</label>
         <textarea
-          className="rounded-md p-2 w-full min-h-[120px] text-black"
+          className="rounded-md p-2 w-full min-h-[120px] text-black outline-none max-h-[250px]"
           name="message"
           placeholder="your message"
           {...register("message")}
