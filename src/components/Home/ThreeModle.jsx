@@ -44,8 +44,8 @@ const Experience = () => {
         minAzimuthAngle={-Math.PI * 0.5}
         maxAzimuthAngle={Math.PI * 0.5}
       />
-      <group position-y={-1.6} scale={1.4}>
-        <group position-y={1.2}>
+      <group position-y={-1.4} scale={1.6}>
+        <group position-y={1} position-z={1}>
           <Light />
         </group>
         <Avatar />
