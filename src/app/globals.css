@@ -108,7 +108,6 @@
 
 .html:hover {
   filter: invert(0.4) sepia(2) saturate(5) brightness(1) hue-rotate(1deg) drop-shadow(0 0 1rem rgb(255, 174, 22));
-  fill: orange;
 }
 
 .css:hover {
@@ -132,8 +131,15 @@
 }
 
 .git:hover {
-  filter: invert(0.4) sepia(2) saturate(5) brightness(1) hue-rotate(1deg) drop-shadow(0 0 1rem rgb(255, 174, 22));
-  fill: orange;
+  filter: invert(0.5) sepia(2) saturate(5)  hue-rotate(5deg) drop-shadow(0 0 1rem rgb(247, 80, 3));
+}
+
+.bash {
+  filter: invert(0.9) sepia(0) brightness(3)  hue-rotate(0deg);
+}
+
+.bash:hover {
+  filter: invert(0.5) sepia(1) saturate(3)  hue-rotate(70deg) drop-shadow(0 0 1rem rgb(17, 242, 88));
 }
 
 

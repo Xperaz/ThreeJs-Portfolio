@@ -1,5 +1,4 @@
-import { Poppins } from "next/font/google";
-import localFont from "next/font/local";
+import { Allison, Poppins } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -7,15 +6,10 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
 });
 
-const BlackStone = localFont({
-  src: [
-    {
-      path: "../../public/fonts/blackstone-regular-webfont.woff",
-      weight: "normal",
-      style: "normal",
-    },
-  ],
-  variable: "--font-BlackStone",
+const allison = Allison({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-allison",
 });
 
 export const metadata = {
@@ -27,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} ${BlackStone.variable} font-normal text-md`}
+        className={`${poppins.className} ${allison.variable} font-normal text-md`}
       >
         {children}
       </body>

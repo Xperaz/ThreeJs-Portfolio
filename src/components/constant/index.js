@@ -37,7 +37,8 @@ import {
   cppSkill,
   cSkill,
   gitSkill,
-  dockerSkill
+  dockerSkill,
+  bashSkill
 } from "../../../public";
 
 const technologies = [
@@ -100,6 +101,7 @@ const skills = [
     name: "HTML 5",
     icon: html5,
     style: 'html',
+    component: 'Html'
   },
   {
     name: "CSS 3",
@@ -141,10 +143,11 @@ const skills = [
     icon: cSkill,
     style: 'cppSkill'
   },
-  // {
-  //   name: "Bash",
-  //   icon: bash,
-  // },
+  {
+    name: "Bash",
+    icon: bashSkill,
+    style: 'bash',
+  },
   {
     name: "git",
     icon: gitSkill,

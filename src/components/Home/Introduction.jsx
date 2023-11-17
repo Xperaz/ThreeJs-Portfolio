@@ -33,7 +33,7 @@ const Introduction = () => {
               delay: 1
             }}
 
-            className={`font-BlackStone text-[45px] font-normal`} onMouseEnter={textEnter} onMouseLeave={textLeave} >Hi There !</motion.h2>
+            className={`font-allison text-[45px] font-normal`} onMouseEnter={textEnter} onMouseLeave={textLeave} >Hi There !</motion.h2>
           <motion.p
             initial={{
               x: -500,

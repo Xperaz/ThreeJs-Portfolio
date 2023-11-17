@@ -38,6 +38,7 @@ import cppSkill from './skills/cppSkill.svg';
 import cSkill from './skills/cSkill.svg';
 import gitSkill from './skills/git.svg';
 import dockerSkill from './skills/dockerSkill.svg';
+import bashSkill from './skills/bashSkill.svg';
 
 export {
   javascript,
@@ -78,5 +79,6 @@ export {
   cppSkill,
   cSkill,
   gitSkill,
-  dockerSkill
+  dockerSkill,
+  bashSkill
 };

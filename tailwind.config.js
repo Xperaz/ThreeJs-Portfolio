@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        BlackStone: ["var(--font-BlackStone)"],
+        allison: ["var(--font-allison)"],
       },
 
       colors: {

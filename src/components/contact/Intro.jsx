@@ -23,7 +23,7 @@ const Intro = () => {
             duration: 1.5,
             delay: 1,
           }}
-          className={`font-BlackStone text-[45px] font-normal`}
+          className={`font-allison text-[45px] font-normal`}
           onMouseEnter={() => setCursorVariant("text")}
           onMouseLeave={() => setCursorVariant("default")}
         >
