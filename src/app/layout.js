@@ -13,8 +13,11 @@ const allison = Allison({
 });
 
 export const metadata = {
-  title: "Aouhadou",
-  description: "Azedine Ouhadou Portfolio",
+  title: "Azedine Ouhadou",
+  description: "Azedine Ouhadou portfolio",
+  keywords: "azedine ouhadou, portfolio, developer, front-end, Front-End Developer, User Interface Design, software engineer",
+  url: "https://azedineouhadou.tech/",
+  image: "https://azedineouhadou.tech/personal/profile.jpeg",
 };
 
 export default function RootLayout({ children }) {

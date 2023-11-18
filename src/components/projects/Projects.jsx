@@ -3,7 +3,6 @@ import CursorContext from "@/context/CursorContext";
 import Header from "../Header";
 import { useState } from "react";
 import ShowCase from "./ShowCase";
-import Cursor from "../shared/Cursor";
 
 const Projects = () => {
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -13,7 +12,6 @@ const Projects = () => {
     <>
       <div className="z-50">
         <CursorContext.Provider value={cursorInfo}>
-          {/* <Cursor cursorVariant={cursorVariant} /> */}
           <Header />
           <ShowCase />
         </CursorContext.Provider>

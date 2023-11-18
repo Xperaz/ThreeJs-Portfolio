@@ -4,7 +4,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import profile from "@/../public/personal/profile.jpeg"
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Header from "../Header";
 
 const AboutMe = () => {
   const sectionRef = useRef(null);

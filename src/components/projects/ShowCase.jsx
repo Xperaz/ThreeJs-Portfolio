@@ -1,11 +1,8 @@
 import { projects } from "../constant";
 import { motion } from "framer-motion";
-import { useContext } from "react";
-import CursorContext from "@/context/CursorContext";
 import Project from "./Project";
 
 const ShowCase = () => {
-  const { setCursorVariant } = useContext(CursorContext);
 
   return (
     <div className="md:flex md:justify-center md:items-center md:w-full md:h-[90vh]">
