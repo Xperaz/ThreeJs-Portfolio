@@ -163,7 +163,7 @@ const skills = [
 const projects = [
   {
     title: "Azedine Ouhadou Portfolio",
-    url: "https:////",
+    url: "www.azedineouhadou.tech",
     projectLocation: "Visit live demo",
     image: aouhadou,
     technologiesUsed: [
