@@ -12,7 +12,7 @@ export default function Home() {
   const cursorInfo = { cursorVariant, setCursorVariant };
 
   return (
-      <div className="realtive text-white min-h-[100vh] flex flex-col items-center justify-between gap-2 backgroundGradient overflow-y-scroll float-none bg-scroll">
+      <div className="relative text-white min-h-[100vh] flex flex-col items-center justify-between gap-2 backgroundGradient overflow-y-scroll scroll-smooth bg-fixed">
         <ThreeModle />
         <div className="z-50">
           <CursorContext.Provider value={cursorInfo}>

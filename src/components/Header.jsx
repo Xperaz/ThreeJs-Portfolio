@@ -9,7 +9,7 @@ const Header = () => {
   const { setCursorVariant } = useContext(CursorContext);
 
   return (
-      <div className="flex justify-center align-center lg:gap-28 sm:gap-10 gap-32 z-[995] mt-4 mx-4">
+      <div className="flex w-[90vw] justify-between items-center z-[995] mt-4 mx-10 max-w-[1200px] gap-10">
         <Link
           href={"/"}
           className={``}
@@ -20,7 +20,7 @@ const Header = () => {
         </Link>
 
         <Navbar />
-        <Social style="hidden sm:flex justify-between align-center gap-4 mt-4"/>
+        <Social style="hidden md:flex justify-between align-center gap-4 mt-4"/>
       </div>
   );
 };

@@ -14,7 +14,7 @@ const Cv = () => {
         delay: 0.3,
         duration: 0.5
       }}
-      className='flex flex-col justify-end sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-12 w-full'>
+      className='flex flex-col justify-end sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-12 w-full mt-10'>
       <Link href="/contact"
         className="group bg-white  text-black lg:px-7 sm:px-3 px-2 sm:py-3 py-2 flex items-center gap-2 rounded-full font-medium lg:text-lg text-md outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
       >
