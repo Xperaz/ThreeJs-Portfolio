@@ -1,11 +1,11 @@
 "use client";
 import Header from "@/components/Header";
-import ThreeModle from "@/components/home/ThreeModle";
-import Introduction from "@/components/home/Introduction";
 import Cursor from "@/components/shared/Cursor";
 import { useState } from "react";
 import CursorContext from "@/context/CursorContext";
 import Cv from "@/components/shared/Cv";
+import ThreeModle from "@/components/home/ThreeModle";
+import Introduction from "@/components/home/Introduction";
 
 export default function Home() {
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
       <div className="realtive text-white min-h-[100vh] flex flex-col items-center justify-between gap-2 backgroundGradient overflow-y-scroll float-none bg-scroll">
-          <ThreeModle />
+        <ThreeModle />
         <div className="z-50">
           <CursorContext.Provider value={cursorInfo}>
             <Header />
