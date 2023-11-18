@@ -9,11 +9,9 @@ export const Light = ({ vec = new Vector3(), ...props }) => {
   const light = useRef(null);
 
   useFrame((state) => {
-    // Calculate the light's position based on the mouse position
     const mousePosition = new Vector3(state.mouse.x, state.mouse.y, 0);
     const lightPosition = mousePosition.clone().normalize().multiplyScalar(2);
 
-    // Update the light's position and target
     if (light.current) {
       light.current.position.copy(lightPosition);
       light.current.target.position.copy(mousePosition);
