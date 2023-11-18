@@ -1,7 +1,7 @@
 "use client";
 import Header from "@/components/Header";
-import ThreeModle from "@/components/Home/ThreeModle";
-import Introduction from "@/components/Home/Introduction";
+import ThreeModle from "@/components/home/ThreeModle";
+import Introduction from "@/components/home/Introduction";
 import Cursor from "@/components/shared/Cursor";
 import { useState } from "react";
 import CursorContext from "@/context/CursorContext";

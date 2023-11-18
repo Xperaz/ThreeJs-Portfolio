@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <nav className="">
-      <div className="hidden sm:flex flex-col justify-center rounded-full h-12 bg-[#6c6c6f]/50 p-3 lg:px-5 md:px-3 text-sm">
+      <div className="hidden sm:flex flex-col items-center rounded-full h-12 bg-[#6c6c6f]/50 p-3 lg:px-5 md:px-3 text-sm">
           <ul className="flex justify-between align-center lg:gap-10 md:gap-8 text-white">
             <MyLink navLink="Home" isActive={pathname === "/" ? true : false} />
             <MyLink

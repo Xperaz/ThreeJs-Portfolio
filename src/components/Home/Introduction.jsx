@@ -14,7 +14,7 @@ const Introduction = () => {
   }
 
   return (
-    <div className='w-full absolute introduction'>
+    <div className='w-full absolute introduction max-w-[1200px] xl:max-w-[1400px]'>
       <div
         className='flex flex-col justify-between items-start m-auto lg:mx-64 z-50 mx-10'>
           <motion.h2
@@ -48,7 +48,7 @@ const Introduction = () => {
             transition={{
               duration: 1.5,
             }} 
-            className='text-[16px] sm:text-[18px] font-light leading-7' onMouseEnter={textEnter} onMouseLeave={textLeave} >
+            className='text-[16px] sm:text-[18px] font-light sm:leading-7 leading-6' onMouseEnter={textEnter} onMouseLeave={textLeave} >
               I am Azedine Ouhadou, a Software Engineer focused on Front-End. I enjoy building stunning and user-friendly website building . Explore my skills, projects, and journey in About Me. If you&apos;re interested in working with me, please feel free to get in touch with me.
           </motion.p>
       </div>

@@ -16,7 +16,7 @@ const Skills = () => {
               <Cursor cursorVariant={cursorVariant}/>
             <Header />
             <div className='xl:flex xl:justify-center xl:items-center xl:w-full xl:h-[90vh]'>
-              <div className='flex flex-col justify-center items-center gap-10 my-5'>
+              <div className='flex flex-col justify-center items-center gap-10 my-5 max-w-[1400px] xl:max-w-[1600px]'>
                 <motion.h2 
                   initial={{
                     z: -500,
@@ -34,12 +34,14 @@ const Skills = () => {
                   }}
                   onMouseEnter={() => setCursorVariant('text')} 
                   onMouseLeave={() => setCursorVariant('default')}
-                  className='font-allison text-[36px] xl:text-[45px] font-normal'
+                  className='font-allison text-[36px] xl:text-[45px] font-normal lg:ml-[100px]'
                 >
                     My Tech Skills
                 </motion.h2>
-                <TechSkills />
-                <div className='flex flex-col justify-center items-center gap-3 mb-8 mx-4 md:mx-10'>
+                <div className='lg:ml-[100px]'>
+                  <TechSkills />
+                </div>
+                <div className='flex flex-col justify-center items-center gap-3 mb-8 mx-4 md:mx-10 lg:ml-[200px]'>
                   <h2 
                     className='text-[24px] font-semibold text-[#F1D302]'
                     onMouseEnter={() => setCursorVariant('text')} 
@@ -48,7 +50,7 @@ const Skills = () => {
                     Javascript
                   </h2>
                   <p 
-                    className='text-[16px] font-light text-center sm:mx-44 lg:mx-64 mx-2'
+                    className='text-[16px] font-light text-center sm:mx-44 xl:mx-64 mx-2 leading-7'
                     onMouseEnter={() => setCursorVariant('text')} 
                     onMouseLeave={() => setCursorVariant('default')}
                   >

@@ -12,7 +12,7 @@ export const Skill = ({icon, style }) => {
 
 const TechSkills = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10 lg:mx-80 mx-4">
+    <div className="flex flex-row flex-wrap justify-center gap-10 lg:mx-44 xl:mx-80 mx-4">
       {skills.map((skill, index) => (
         <motion.div
           key={skill.name}

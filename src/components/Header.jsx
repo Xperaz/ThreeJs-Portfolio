@@ -1,7 +1,6 @@
-"use client";
 import Navbar from "./shared/Navbar";
 import Link from "next/link";
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import CursorContext from "@/context/CursorContext";
 import Logo from "./shared/Logo";
 import Social from "./shared/Social";
@@ -10,7 +9,7 @@ const Header = () => {
   const { setCursorVariant } = useContext(CursorContext);
 
   return (
-      <div className="flex justify-around align-center lg:gap-28 sm:gap-10 gap-32 z-[995] mt-4 scroll-smooth">
+      <div className="flex justify-center align-center lg:gap-28 sm:gap-10 gap-32 z-[995] mt-4 mx-4">
         <Link
           href={"/"}
           className={``}
