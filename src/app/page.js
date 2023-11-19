@@ -12,16 +12,16 @@ export default function Home() {
   const cursorInfo = { cursorVariant, setCursorVariant };
 
   return (
-      <div className="relative text-white min-h-[100vh] flex flex-col items-center justify-between gap-2 backgroundGradient overflow-y-scroll scroll-smooth bg-fixed">
+      <div className="text-white w-full min-h-[100vh] flex flex-col items-center backgroundGradient">
         <ThreeModle />
         <div className="z-50">
           <CursorContext.Provider value={cursorInfo}>
-            <Header />
+            <Cursor cursorVariant={cursorVariant} />
+            <Header style={'flex w-[100vw] justify-around items-center z-[995] mt-4 max-w-[1500px] gap-10'}/>
             <Introduction />
             <div className="home-cv">
               <Cv />
             </div>
-            <Cursor cursorVariant={cursorVariant} />
           </CursorContext.Provider>
         </div>
       </div>

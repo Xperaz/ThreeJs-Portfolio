@@ -22,11 +22,11 @@ const ShowCase = () => {
             duration: 1.5,
             delay: 1,
           }}
-          className="font-allison text-[36px] xl:text-[45px] font-normal my-4 lg:ml-[100px]"
+          className="font-allison text-[36px] xl:text-[45px] font-normal my-4"
         >
           My Projects
         </motion.h2>
-        <div className="w-full lg:ml-[100px]">
+        <div className="w-full">
           <div className="flex flex-wrap justify-center gap-6 mb-4">
             {projects.map((project, index) => (
               <Project key={"projec_" + index} index={index} {...project} />

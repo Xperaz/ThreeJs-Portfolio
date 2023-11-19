@@ -34,14 +34,14 @@ const Skills = () => {
                   }}
                   onMouseEnter={() => setCursorVariant('text')} 
                   onMouseLeave={() => setCursorVariant('default')}
-                  className='font-allison text-[36px] xl:text-[45px] font-normal lg:ml-[100px]'
+                  className='font-allison text-[36px] xl:text-[45px] font-normal '
                 >
                     My Tech Skills
                 </motion.h2>
-                <div className='lg:ml-[100px]'>
+                <div className=''>
                   <TechSkills />
                 </div>
-                <div className='flex flex-col justify-center items-center gap-3 mb-8 mx-4 md:mx-10 lg:ml-[200px]'>
+                <div className='flex flex-col justify-center items-center gap-3 mb-8 mx-4 md:mx-10'>
                   <h2 
                     className='text-[24px] font-semibold text-[#F1D302]'
                     onMouseEnter={() => setCursorVariant('text')} 

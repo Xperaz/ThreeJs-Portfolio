@@ -9,7 +9,7 @@ const About = () => {
   const cursorInfo = { cursorVariant, setCursorVariant };
   return (
     <CursorContext.Provider value={cursorInfo}>
-        <Header />
+        <Header style='w-full fixed flex justify-around center-header items-center z-[995] mt-10 max-w-[1500px]' />
       <AboutMe />
     </CursorContext.Provider>
   );

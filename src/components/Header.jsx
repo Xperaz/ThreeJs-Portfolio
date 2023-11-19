@@ -5,22 +5,25 @@ import CursorContext from "@/context/CursorContext";
 import Logo from "./shared/Logo";
 import Social from "./shared/Social";
 
-const Header = () => {
+const Header = ({style}) => {
   const { setCursorVariant } = useContext(CursorContext);
 
   return (
-      <div className="flex w-[90vw] justify-between items-center z-[995] mt-4 mx-10 max-w-[1200px] gap-10">
+      <div className={`${(style !== undefined) ? `${style} px-4` : `flex justify-around items-center z-[995] mt-4 px-4`}`}>
         <Link
           href={"/"}
-          className={``}
+          className={`lg:flex-1`}
           onMouseEnter={() => setCursorVariant("text")}
           onMouseLeave={() => setCursorVariant("default")}
         >
           <Logo />
         </Link>
 
-        <Navbar />
-        <Social style="hidden md:flex justify-between align-center gap-4 mt-4"/>
+        <div className="lg:flex-3">
+          <Navbar />
+        </div>
+
+        <Social style="hidden md:flex justify-end items-center gap-4 lg:flex-1"/>
       </div>
   );
 };

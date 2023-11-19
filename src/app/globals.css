@@ -37,6 +37,11 @@
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
+  .center-header {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 .center-model {
   position: absolute;
   top: 50%;

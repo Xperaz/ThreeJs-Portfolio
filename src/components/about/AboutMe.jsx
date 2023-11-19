@@ -48,11 +48,11 @@ const AboutMe = () => {
             }}
             className="about-scroll-section"
           >
-            <div className="relative ">
+            <div className="relative bg-black rounded-full">
               <Image src={profile} alt="azedine ouhadou profile picture" width={192} height={192} priority={true} quality={95} 
-                className="h-24 w-24 sm:h-32 sm:w-32 object-fit rounded-full border-[0.3rem] border-white shadow-md mb-2" 
+                className="h-24 w-24 sm:h-40 sm:w-40 md:h-44 md:w-44 rounded-full border-[0.3rem] border-white" 
               />
-              <span className="text-2xl sm:text-4xl absolute bottom-0 right-4">👋🏻</span>
+              <span className="text-2xl sm:text-4xl absolute bottom-0 right-2">👋</span>
             </div>
             <h3>Azedine Ouhadou</h3>
             <p>Software Engineer</p>

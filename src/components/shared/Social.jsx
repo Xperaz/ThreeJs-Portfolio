@@ -22,8 +22,8 @@ const Social = ({style}) => {
             height={25}
             priority={false}
           />
-        </Link>
-        <Link href={"https://github.com/Xperaz"}>
+    </Link>
+    <Link href={"https://github.com/Xperaz"}>
           <Image
             src={github}
             alt="Azedine Ouhadou github link"
@@ -31,7 +31,7 @@ const Social = ({style}) => {
             height={25}
             priority={false}
           />
-        </Link>
+    </Link>
     </ul>
   )
 }

@@ -2,7 +2,7 @@ import Skills from "@/components/Skills/Skills";
 
 const page = () => {
   return (
-    <main className="text-white w-full min-h-[100vh] flex flex-col align-center backgroundGradient ">
+    <main className="text-white w-full min-h-[100vh] flex flex-col items-center backgroundGradient ">
       <Skills />
     </main>
   );
