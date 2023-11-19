@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="z-50">
             <Cursor cursorVariant={cursorVariant} />
             <Header />
-            <div className="lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-full lg:h-[90vh] gap-6 max-w-[1200px]">
+            <div className="lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-full lg:h-[90vh] gap-6 max-w-[1200px] mx-5 sm:mx-0">
               <Intro />
               <ContactContainer />
             </div>
