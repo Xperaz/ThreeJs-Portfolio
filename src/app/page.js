@@ -16,12 +16,12 @@ export default function Home() {
         <ThreeModle />
         <div className="z-50">
           <CursorContext.Provider value={cursorInfo}>
-            <Cursor cursorVariant={cursorVariant} />
             <Header style={'flex w-[100vw] justify-around items-center z-[995] mt-4 max-w-[1500px] gap-10'}/>
             <Introduction />
             <div className="home-cv">
               <Cv />
             </div>
+            <Cursor cursorVariant={cursorVariant} />
           </CursorContext.Provider>
         </div>
       </div>
