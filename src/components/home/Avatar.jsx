@@ -34,7 +34,7 @@ export function Avatar() {
     if (pauseAnimation) {
       actions["Greeting"].reset().fadeOut(0.5).stop();
     }
-  }, [pauseAnimation, actions]);
+  }, [pauseAnimation, actions, start]);
 
   useEffect(() => {
     if (status === "RUNNING" && time >= 4) {
@@ -42,7 +42,7 @@ export function Avatar() {
       pause();
       setWhenAnimate(0);
     }
-  }, [time, status]);
+  }, [time, status, pause]);
 
   return (
     <>

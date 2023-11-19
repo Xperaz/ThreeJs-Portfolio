@@ -25,6 +25,8 @@ const Cv = () => {
       <Link
         className="group bg-transparent border lg:px-7 sm:px-3 px-2 sm:py-3 py-2 flex items-center gap-2 rounded-full font-medium lg:text-lg text-md outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
         onClick={() => window.open("/Cv.pdf", "_blank")}
+        href={"/Cv.pdf"}
+        target="_blank"
         download
       >
         Download cv
