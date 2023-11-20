@@ -1,5 +1,7 @@
 import { Allison, Poppins } from "next/font/google";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,6 +29,7 @@ export default function RootLayout({ children }) {
         className={`${poppins.className} ${allison.variable} font-normal text-md`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
