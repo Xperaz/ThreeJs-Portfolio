@@ -69,24 +69,26 @@ const Project = ({
         </button>
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className="absolute bg-black/75 overlay-fadeIn inset-0 z-[997]" />
+        <Dialog.Overlay className="absolute bg-black/75 overlay-fadeIn inset-0 z-[997] " />
         <Dialog.Content
-          className="flex flex-col items-start gap-3 modal-fadeIn fixed top-[42%] left-[50%] max-h-[85vh] md:w-[50vw] w-[80vw] translate-x-[-50%] translate-y-[-50%] rounded-[6px] p-[25px] 
-         focus:outline-none z-[998]"
+          className="flex flex-col items-start gap-3 modal-fadeIn fixed top-[45%] left-[50%] max-h-[85vh] md:w-[50vw] w-[80vw] translate-x-[-50%] translate-y-[-50%] rounded-3xl p-[25px] 
+         focus:outline-none z-[998] overflow-y-scroll hide-scrollbar overflow-x-hidden bg-black/60 "
         >
-          <div className="relative h-full w-full">
+          <div className="flex justify-center items-center w-full h-full ">
             <Image
+              className="rounded-xl "
               src={image}
-              className="rounded-2xl overflow-hidden"
               alt={title + " image"}
               width={0}
               height={0}
               sizes="100vw"
-              priority={false}
+              priority
             />
           </div>
           <div className="mt-2 mx-4">
-            <h3 className="text-white font-light md:font-bold md:text-[22px] text-[16px]">{title}</h3>
+            <h3 className="text-white font-light md:font-bold md:text-[22px] text-[16px]">
+              {title}
+            </h3>
           </div>
 
           <div
@@ -100,7 +102,9 @@ const Project = ({
               width={28}
               height={28}
             />
-            <p className="cursor-pointer text-[#ddd] md:text-[16px] text-[14px]">{projectLocation}</p>
+            <p className="cursor-pointer text-[#ddd] md:text-[16px] text-[14px]">
+              {projectLocation}
+            </p>
           </div>
 
           <div className="mt-4 flex flex-wrap gap-1 mx-4">

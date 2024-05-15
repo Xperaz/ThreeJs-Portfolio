@@ -2,7 +2,7 @@ import Projects from "@/components/projects/Projects";
 
 const page = () => {
   return (
-    <main className="text-white w-full min-h-[100vh] flex flex-col items-center gap-2 backgroundGradient-2">
+    <main className="text-white w-full min-h-[100vh] flex flex-col items-center gap-2 backgroundGradient-2 overflow-scroll">
       <Projects />
     </main>
   );

@@ -9,14 +9,12 @@ const Projects = () => {
   const cursorInfo = { cursorVariant, setCursorVariant };
 
   return (
-    <>
-      <div className="z-50">
-        <CursorContext.Provider value={cursorInfo}>
-          <Header />
-          <ShowCase />
-        </CursorContext.Provider>
-      </div>
-    </>
+    <div className="z-50">
+      <CursorContext.Provider value={cursorInfo}>
+        <Header />
+        <ShowCase />
+      </CursorContext.Provider>
+    </div>
   );
 };
 

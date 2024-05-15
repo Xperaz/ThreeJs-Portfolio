@@ -3,9 +3,8 @@ import { motion } from "framer-motion";
 import Project from "./Project";
 
 const ShowCase = () => {
-
   return (
-    <div className="md:flex md:justify-center md:items-center md:w-full md:h-[90vh]">
+    <div className="md:flex md:justify-center md:items-center md:w-full">
       <div className="flex flex-col justify-center items-center lg:mx-28 gap-6 max-w-[1200px]">
         <motion.h2
           initial={{
@@ -33,8 +32,7 @@ const ShowCase = () => {
             ))}
           </div>
         </div>
-
-        </div>
+      </div>
     </div>
   );
 };
