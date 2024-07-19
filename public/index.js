@@ -27,18 +27,20 @@ import irc from "./projects/irc.webp";
 import philosophers from "./projects/philosophers.webp";
 import minishell from "./projects/minishell.jpg";
 import coffeeShop from "./projects/coffeeShop.png";
+import snapLink from "./projects/snapLink.png";
 
-import js from './skills/javascript.svg';
-import html5 from './skills/html.svg';
-import css3 from './skills/css.svg';
-import types from './skills/typescript.svg';
-import react from './skills/react.svg';
-import tailwindcss from './skills/tailwindcss.svg';
-import cppSkill from './skills/cppSkill.svg';
-import cSkill from './skills/cSkill.svg';
-import gitSkill from './skills/git.svg';
-import dockerSkill from './skills/dockerSkill.svg';
-import bashSkill from './skills/bashSkill.svg';
+import js from "./skills/javascript.svg";
+import html5 from "./skills/html.svg";
+import css3 from "./skills/css.svg";
+import types from "./skills/typescript.svg";
+import react from "./skills/react.svg";
+import tailwindcss from "./skills/tailwindcss.svg";
+import cppSkill from "./skills/cppSkill.svg";
+import cSkill from "./skills/cSkill.svg";
+import gitSkill from "./skills/git.svg";
+import dockerSkill from "./skills/dockerSkill.svg";
+import bashSkill from "./skills/bashSkill.svg";
+import supabase from "./icons/skills/supabase.svg";
 
 export {
   javascript,
@@ -70,6 +72,7 @@ export {
   philosophers,
   minishell,
   coffeeShop,
+  snapLink,
   js,
   html5,
   css3,
@@ -80,5 +83,6 @@ export {
   cSkill,
   gitSkill,
   dockerSkill,
-  bashSkill
+  bashSkill,
+  supabase,
 };

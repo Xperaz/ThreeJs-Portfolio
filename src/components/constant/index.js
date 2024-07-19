@@ -28,6 +28,7 @@ import {
   philosophers,
   minishell,
   coffeeShop,
+  snapLink,
   js,
   html5,
   css3,
@@ -38,7 +39,8 @@ import {
   cSkill,
   gitSkill,
   dockerSkill,
-  bashSkill
+  bashSkill,
+  supabase,
 } from "../../../public";
 
 const technologies = [
@@ -100,67 +102,87 @@ const skills = [
   {
     name: "HTML 5",
     icon: html5,
-    style: 'html',
-    component: 'Html'
+    style: "html",
+    component: "Html",
   },
   {
     name: "CSS 3",
     icon: css3,
-    style: 'css'
+    style: "css",
   },
   {
     name: "JavaScript",
     icon: js,
-    style: 'js'
+    style: "js",
   },
   {
     name: "TypeScript",
     icon: types,
-    style: 'typescript'
+    style: "typescript",
   },
   {
     name: "React JS",
     icon: react,
-    style: 'react'
+    style: "react",
   },
   {
     name: "Next JS",
     icon: nextjs,
-    style: 'nextjs',
+    style: "nextjs",
   },
   {
     name: "Tailwind CSS",
     icon: tailwindcss,
-    style: 'tailwind'
+    style: "tailwind",
   },
   {
     name: "C++",
     icon: cppSkill,
-    style: 'cppSkill'
+    style: "cppSkill",
   },
   {
     name: "C",
     icon: cSkill,
-    style: 'cppSkill'
+    style: "cppSkill",
   },
   {
     name: "Bash",
     icon: bashSkill,
-    style: 'bash',
+    style: "bash",
   },
   {
     name: "git",
     icon: gitSkill,
-    style: "git"
+    style: "git",
   },
   {
     name: "docker",
     icon: dockerSkill,
-    style: 'cppSkill'
+    style: "cppSkill",
   },
 ];
 
 const projects = [
+  {
+    title: "SnapLink: A link shortening web app.",
+    url: "https://snaplink1.vercel.app/",
+    projectLocation: "Visit live demo",
+    image: snapLink,
+    technologiesUsed: [
+      {
+        name: "react Js",
+        icon: reactjs,
+      },
+      {
+        name: "tailwind Css",
+        icon: tailwind,
+      },
+      {
+        name: "Supabase",
+        icon: supabase,
+      },
+    ],
+  },
   {
     title: "Azedine Ouhadou Portfolio",
     url: "/",
