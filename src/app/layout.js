@@ -18,9 +18,9 @@ export const metadata = {
   title: "Azedine Ouhadou",
   description: "Azedine Ouhadou portfolio",
   keywords:
-    "azedine ouhadou, portfolio, developer, front-end, Front-End Developer, User Interface Design, software engineer",
-  url: "https://azedineouhadou.tech/",
-  image: "https://azedineouhadou.tech/personal/profile.jpeg",
+    "azedine ouhadou, azedine, ouhadou, aouhadou, portfolio, developer, front-end, Front-End Developer, User Interface Design, software engineer",
+  url: "azedineouhadou.me/",
+  image: "azedineouhadou.me/personal/profile.jpeg",
 };
 
 export default function RootLayout({ children }) {
