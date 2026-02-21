@@ -42,6 +42,10 @@ const Navbar = () => {
           <ul className="flex justify-between align-center lg:gap-10 md:gap-8 text-white">
             <MyLink navLink="Home" isActive={pathname === "/" ? true : false} />
             <MyLink
+              navLink={"Experience"}
+              isActive={pathname === "/experience" ? true : false}
+            />
+            <MyLink
               navLink={"About"}
               isActive={pathname === "/about" ? true : false}
             />
@@ -78,6 +82,10 @@ const Navbar = () => {
             >
               <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4 bg-black/'>
               <MyLink navLink="Home" isActive={pathname === "/" ? true : false} />
+            <MyLink
+              navLink={"Experience"}
+              isActive={pathname === "/experience" ? true : false}
+            />
             <MyLink
               navLink={"Projects"}
               isActive={pathname === "/projects" ? true : false}

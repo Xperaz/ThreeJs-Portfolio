@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
 }
 
@@ -11,36 +11,40 @@
 }
 
 .backgroundGradient {
-    --gradient-start: #121317;
-    --gradient-start-text: '#121317';
-    --gradient-end: #323B42;
-    --gradient-end-text: '#323B42';
-    background: linear-gradient(33deg, var(--gradient-start), var(--gradient-end));
-  }
+  --gradient-start: #121317;
+  --gradient-start-text: "#121317";
+  --gradient-end: #323b42;
+  --gradient-end-text: "#323B42";
+  background: linear-gradient(
+    33deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+}
 
-  .backgroundGradient-2 {
-    background-color: #88d4f1; /* For browsers that do not support gradients */
-    background-image: linear-gradient(#87CEEB, #bee9fa);
-  }
+.backgroundGradient-2 {
+  background-color: #88d4f1; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#87ceeb, #bee9fa);
+}
 
-  .black-gradient {
-    background: #000000; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #434343,
-      #000000
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #434343,
-      #000000
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
+.black-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
-  .center-header {
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.center-header {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .center-model {
   position: absolute;
@@ -70,7 +74,6 @@
   transform: translate(-50%, -50%);
 }
 
-
 .title {
   font-size: 10rem;
 }
@@ -84,9 +87,10 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  box-shadow: 0 0 20px #fff,
-  0 0 60px #fff,
-  0 0 100px #fff;
+  box-shadow:
+    0 0 20px #fff,
+    0 0 60px #fff,
+    0 0 100px #fff;
 }
 
 .modal-fadeIn {
@@ -102,52 +106,58 @@
 /* blur hover effects */
 
 .js:hover {
-  filter: invert(0.2) sepia(2) saturate(4) brightness(3) drop-shadow(0 0 1rem rgb(249, 212, 0));
+  filter: invert(0.2) sepia(2) saturate(4) brightness(3)
+    drop-shadow(0 0 1rem rgb(249, 212, 0));
   fill: yellow;
 }
-
 
 .nextjs:hover {
   filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
 }
 
 .html:hover {
-  filter: invert(0.4) sepia(2) saturate(5) brightness(1) hue-rotate(350deg) drop-shadow(0 0 1rem rgb(249, 132, 29));
+  filter: invert(0.4) sepia(2) saturate(5) brightness(1) hue-rotate(350deg)
+    drop-shadow(0 0 1rem rgb(249, 132, 29));
 }
 
 .css:hover {
-  filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg) drop-shadow(0 0 1rem rgb(1, 154, 243));
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg)
+    drop-shadow(0 0 1rem rgb(1, 154, 243));
 }
 
 .typescript:hover {
-  filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg) drop-shadow(0 0 1rem rgb(1, 154, 243));
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg)
+    drop-shadow(0 0 1rem rgb(1, 154, 243));
 }
 
 .react:hover {
-  filter: invert(.4) sepia(1) saturate(5) hue-rotate(178deg) drop-shadow(0 0 1rem rgb(1, 154, 243));
+  filter: invert(0.4) sepia(1) saturate(5) hue-rotate(178deg)
+    drop-shadow(0 0 1rem rgb(1, 154, 243));
 }
 
 .tailwind:hover {
-  filter: invert(.3) sepia(1) saturate(5) hue-rotate(175deg) drop-shadow(0 0 1rem rgb(31, 184, 213));
+  filter: invert(0.3) sepia(1) saturate(5) hue-rotate(175deg)
+    drop-shadow(0 0 1rem rgb(31, 184, 213));
 }
 
 .cppSkill:hover {
-  filter: invert(.5) sepia(1) saturate(10) hue-rotate(178deg) drop-shadow(0 0 1rem rgb(1, 154, 243));
+  filter: invert(0.5) sepia(1) saturate(10) hue-rotate(178deg)
+    drop-shadow(0 0 1rem rgb(1, 154, 243));
 }
 
 .git:hover {
-  filter: invert(0.5) sepia(1) saturate(3) hue-rotate(350deg) drop-shadow(0 0 1rem rgb(249, 83, 0));
+  filter: invert(0.5) sepia(1) saturate(3) hue-rotate(350deg)
+    drop-shadow(0 0 1rem rgb(249, 83, 0));
 }
 
 .bash {
-  filter: invert(0.9) sepia(0) brightness(3)  hue-rotate(0deg);
+  filter: invert(0.9) sepia(0) brightness(3) hue-rotate(0deg);
 }
 
 .bash:hover {
-  filter: invert(0.5) sepia(1) saturate(3)  hue-rotate(100deg) drop-shadow(0 0 1rem rgb(74, 255, 131));
+  filter: invert(0.5) sepia(1) saturate(3) hue-rotate(100deg)
+    drop-shadow(0 0 1rem rgb(74, 255, 131));
 }
-
-
 
 @keyframes fadeIn {
   from {
@@ -158,13 +168,11 @@
   }
 }
 
-
 .scroll-container {
   position: fixed;
   left: 50%;
   bottom: 5vh;
 }
-
 
 .arrow-scroll {
   position: relative;
@@ -179,18 +187,15 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%)
-            rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .arrow:nth-child(2) {
-  animation: arrow1 1.5s
-          ease-in-out infinite;
+  animation: arrow1 1.5s ease-in-out infinite;
 }
 
 .arrow:nth-child(3) {
-  animation: arrow2 1.5s
-          ease-in-out infinite;
+  animation: arrow2 1.5s ease-in-out infinite;
 }
 
 @keyframes arrow1 {
@@ -223,7 +228,7 @@
 }
 
 .about-scroll-section p {
-  font-family: "Gill Sans", "Gill Sans MT", Poppins , "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Poppins, "Trebuchet MS", sans-serif;
   font-size: clamp(1rem, 2vw, 3rem);
   color: #da4ea2;
   letter-spacing: clamp(0.7rem, 0.65vw, 1.1rem);
@@ -270,7 +275,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
 }
 
 @media only screen and (max-width: 1023px) {
@@ -280,7 +284,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -292,18 +295,19 @@
   }
 
   .about-scroll-section h3 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family:
+      "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-size: clamp(1.5rem, 3vw, 8rem);
     color: #fff;
   }
-  
+
   .about-scroll-section p {
-    font-family: "Gill Sans", "Gill Sans MT", Poppins , "Trebuchet MS", sans-serif;
+    font-family:
+      "Gill Sans", "Gill Sans MT", Poppins, "Trebuchet MS", sans-serif;
     font-size: clamp(0.6rem, 1vw, 3rem);
     color: #da4ea2;
     letter-spacing: clamp(0.4rem, 0.65vw, 1rem);
   }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -320,9 +324,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
 }
-
 
 @media only screen and (max-width: 320px) {
   .introduction {
@@ -345,15 +347,48 @@
     left: 25%;
     transform: translate(-50%, -50%);
   }
-
 }
-
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
 .hide-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Timeline styles */
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #da4ea2;
+  border: 3px solid #2d2d3a;
+  box-shadow: 0 0 12px rgba(218, 78, 162, 0.5);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.timeline-line {
+  width: 2px;
+  flex: 1;
+  min-height: 40px;
+  background: linear-gradient(to bottom, #da4ea2, rgba(218, 78, 162, 0.15));
+}
+
+.timeline-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  backdrop-filter: blur(8px);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+  border-color: rgba(218, 78, 162, 0.3);
+  box-shadow: 0 4px 20px rgba(218, 78, 162, 0.1);
 }

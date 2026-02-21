@@ -213,7 +213,7 @@ const projects = [
   },
   {
     title: "Transcendence: Competitive pong game platform.",
-    url: "https://github.com/Xperaz/ft_transcendence",
+    url: "https://github.com/azedineouhadou/ft_transcendence",
     projectLocation: "Visit project repository",
     projectLocation: "Visit project repository",
     image: transcendence,
@@ -246,7 +246,7 @@ const projects = [
   },
   {
     title: "MinRt: Raytracing engine wrote in C.",
-    url: "https://github.com/Xperaz/minirt",
+    url: "https://github.com/azedineouhadou/minirt",
     projectLocation: "Visit project repository",
     image: minirt,
     technologiesUsed: [
@@ -262,7 +262,7 @@ const projects = [
   },
   {
     title: "Fractol: Creating graphically beautiful fractals.",
-    url: "https://github.com/Xperaz/Fractol",
+    url: "https://github.com/azedineouhadou/Fractol",
     projectLocation: "Visit project repository",
     image: fractol,
     technologiesUsed: [
@@ -278,7 +278,7 @@ const projects = [
   },
   {
     title: "Inception: Create LEMP stack using docker-compose on debian",
-    url: "https://github.com/Xperaz/inception-42",
+    url: "https://github.com/azedineouhadou/inception-42",
     projectLocation: "Visit project repository",
     image: inception,
     technologiesUsed: [
@@ -298,7 +298,7 @@ const projects = [
   },
   {
     title: "Ft_IRC: Simple IRC Server based on the RFC.",
-    url: "https://github.com/Xperaz/ft_irc",
+    url: "https://github.com/azedineouhadou/ft_irc",
     projectLocation: "Visit project repository",
     image: irc,
     technologiesUsed: [
@@ -318,7 +318,7 @@ const projects = [
   },
   {
     title: "Minishell: Recoding our own little bash.",
-    url: "https://github.com/Xperaz/minishell",
+    url: "https://github.com/azedineouhadou/minishell",
     projectLocation: "Visit project repository",
     image: minishell,
     technologiesUsed: [
@@ -335,7 +335,7 @@ const projects = [
   {
     title:
       "Philosophers: A classic Dining philosophers problem solved with a multithreaded program.",
-    url: "https://github.com/Xperaz/philosopher_42",
+    url: "https://github.com/azedineouhadou/philosopher_42",
     projectLocation: "Visit project repository",
     image: philosophers,
     technologiesUsed: [
@@ -370,4 +370,57 @@ const projects = [
     ],
   },
 ];
-export { technologies, skills, projects };
+
+const experiences = [
+  {
+    title: "Software Engineer",
+    company: "Enakl",
+    date: "Present",
+    description: [
+      "Developing a SaaS platform using Next.js, Node.js, Nest.js, PostgreSQL, and TypeORM.",
+    ],
+    technologies: ["Node.js", "Nest.js", "PostgreSQL", "TypeORM", "Next.js"],
+  },
+  {
+    title: "Front-End Developer",
+    company: "Dahbi Group",
+    type: "Freelance",
+    date: "Apr 2025 – dec 2025",
+    description: [
+      "Engineered a comprehensive management, automating B2B workflows and B2C fitness club systems using Next.js and TypeScript.",
+      "Developed an enterprise-grade reusable UI component library using ShadCN, Tailwind CSS, and TanStack Query.",
+      "Maintained a cross-platform mobile application using React Native.",
+    ],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "ShadCN",
+      "Tailwind CSS",
+      "TanStack Query",
+      "React Native",
+    ],
+  },
+  {
+    title: "Full-Stack Developer",
+    company: "Flow Digital",
+    date: "Aug 2024 – Mar 2025",
+    description: [
+      "Developed and maintained a full-stack ERP system for the construction industry using React.js, Next.js, Nest.js, and PostgreSQL.",
+      "Created an After-Sales Service (SAV) module and ensured high-quality code delivery through Jest unit testing.",
+    ],
+    technologies: ["React.js", "Next.js", "Nest.js", "PostgreSQL", "Jest"],
+  },
+  {
+    title: "Front-End Developer",
+    company: "Billo",
+    type: "Internship",
+    date: "Feb 2024 – Aug 2024",
+    description: [
+      "Contributed to responsive web applications for digital mail and payments management using AI, helping achieve over 52K monthly visits.",
+      "Collaborated with designers and marketers to align website updates with brand guidelines using React.js, Next.js, and TanStack Query.",
+    ],
+    technologies: ["React.js", "Next.js", "TanStack Query"],
+  },
+];
+
+export { technologies, skills, projects, experiences };
