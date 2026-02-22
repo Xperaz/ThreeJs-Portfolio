@@ -29,6 +29,7 @@ import {
   minishell,
   coffeeShop,
   snapLink,
+  pricePulse,
   js,
   html5,
   css3,
@@ -163,6 +164,30 @@ const skills = [
 ];
 
 const projects = [
+  {
+    title: "PricePulse: Dynamic discounts powered by Purchasing Power Parity.",
+    url: "https://price-pulse-seven.vercel.app/",
+    projectLocation: "Visit live demo",
+    image: pricePulse,
+    technologiesUsed: [
+      {
+        name: "Next Js",
+        icon: nextjs,
+      },
+      {
+        name: "TypeScript",
+        icon: typescript,
+      },
+      {
+        name: "Tailwind Css",
+        icon: tailwind,
+      },
+      {
+        name: "PostgreSQL",
+        icon: postgres,
+      },
+    ],
+  },
   {
     title: "SnapLink: A link shortening web app.",
     url: "https://snaplink1.vercel.app/",

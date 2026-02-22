@@ -28,6 +28,7 @@ import philosophers from "./projects/philosophers.webp";
 import minishell from "./projects/minishell.jpg";
 import coffeeShop from "./projects/coffeeShop.png";
 import snapLink from "./projects/snapLink.png";
+import pricePulse from "./projects/pricePulse.png";
 
 import js from "./skills/javascript.svg";
 import html5 from "./skills/html.svg";
@@ -73,6 +74,7 @@ export {
   minishell,
   coffeeShop,
   snapLink,
+  pricePulse,
   js,
   html5,
   css3,
