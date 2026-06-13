@@ -29,14 +29,12 @@ const Card = ({
       >
         <div className="relative h-full w-full">
           <Image
-            className="rounded-2xl"
+            className="rounded-2xl object-cover"
             src={image}
             alt={title + " image"}
-            width={0}
-            height={0}
             fill={true}
-            priority
-            sizes="100vw"
+            priority={index < 2}
+            sizes="270px"
           />
         </div>
       </Tilt>

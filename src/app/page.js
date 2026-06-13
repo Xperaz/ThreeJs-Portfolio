@@ -4,8 +4,15 @@ import Cursor from "@/components/shared/Cursor";
 import { useState } from "react";
 import CursorContext from "@/context/CursorContext";
 import Cv from "@/components/shared/Cv";
-import ThreeModle from "@/components/home/ThreeModle";
+import dynamic from "next/dynamic";
 import Introduction from "@/components/home/Introduction";
+
+// The 3D avatar pulls in three.js/drei — load it lazily so it stays out of
+// the initial JS bundle and the rest of the page paints first.
+const ThreeModle = dynamic(() => import("@/components/home/ThreeModle"), {
+  ssr: false,
+  loading: () => null,
+});
 
 export default function Home() {
   const [cursorVariant, setCursorVariant] = useState("default");

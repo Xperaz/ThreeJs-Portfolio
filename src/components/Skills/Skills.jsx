@@ -4,7 +4,7 @@ import { useState } from "react";
 import CursorContext from "@/context/CursorContext";
 import Cursor from "../shared/Cursor";
 import TechSkills from "./TechSkills";
-import { motion } from "framer-motion";
+import AnimatedTitle from "@/components/shared/AnimatedTitle";
 
 const Skills = () => {
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -17,27 +17,13 @@ const Skills = () => {
         <Header />
         <div className="xl:flex xl:justify-center xl:items-center xl:w-full xl:h-[90vh]">
           <div className="flex flex-col justify-center items-center gap-10 my-5 max-w-[1400px] xl:max-w-[1600px]">
-            <motion.h2
-              initial={{
-                z: -500,
-                opacity: 0,
-                scale: 0.5,
-              }}
-              animate={{
-                z: 0,
-                opacity: 1,
-                scale: 1,
-              }}
-              transition={{
-                duration: 1.5,
-                delay: 1,
-              }}
+            <AnimatedTitle
               onMouseEnter={() => setCursorVariant("text")}
               onMouseLeave={() => setCursorVariant("default")}
               className="font-allison text-[36px] xl:text-[45px] font-normal "
             >
               My Tech Skills
-            </motion.h2>
+            </AnimatedTitle>
             <div className="">
               <TechSkills />
             </div>

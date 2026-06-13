@@ -12,33 +12,42 @@ const AboutMe = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    const pin = gsap.fromTo(
-      sectionRef.current,
-      {
-        translateX: 0,
-      },
-      {
-        translateX: "-500vw",
-        ease: "none",
-        duration: 1,
-        scrollTrigger: {
-          trigger: triggerRef.current,
-          start: "top top",
-          end: "2000 top",
-          scrub: 0.6,
-          pin: true,
+    // 6 panels -> snap to 1/(6-1) increments so each one lands centered.
+    const sections = 6;
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        sectionRef.current,
+        {
+          translateX: 0,
         },
-      }
-    );
+        {
+          translateX: "-500vw",
+          ease: "none",
+          scrollTrigger: {
+            trigger: triggerRef.current,
+            start: "top top",
+            end: () => "+=" + window.innerWidth * (sections - 1),
+            scrub: 0.6,
+            pin: true,
+            invalidateOnRefresh: true,
+            snap: {
+              snapTo: 1 / (sections - 1),
+              duration: { min: 0.2, max: 0.6 },
+              ease: "power1.inOut",
+            },
+          },
+        }
+      );
+    }, triggerRef);
     return () => {
-      pin.kill();
+      ctx.revert();
     };
   }, []);
 
   return (
     <section className="overflow-hidden">
       <div ref={triggerRef}>
-        <div ref={sectionRef} className="h-[100vh] w-[800vw] flex relative">
+        <div ref={sectionRef} className="h-[100vh] w-[600vw] flex relative">
           <motion.div 
             initial={{opacity: 0, y: 100}}
             animate={{ opacity: 1, y: 0}}

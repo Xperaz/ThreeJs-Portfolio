@@ -1,30 +1,14 @@
 import { projects } from "../constant";
-import { motion } from "framer-motion";
+import AnimatedTitle from "@/components/shared/AnimatedTitle";
 import Project from "./Project";
 
 const ShowCase = () => {
   return (
     <div className="md:flex md:justify-center md:items-center md:w-full">
       <div className="flex flex-col justify-center items-center lg:mx-28 gap-6 max-w-[1200px]">
-        <motion.h2
-          initial={{
-            z: -500,
-            opacity: 0,
-            scale: 0.5,
-          }}
-          animate={{
-            z: 0,
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 1.5,
-            delay: 1,
-          }}
-          className="font-allison text-[36px] xl:text-[45px] font-normal my-4"
-        >
+        <AnimatedTitle className="font-allison text-[36px] xl:text-[45px] font-normal my-4">
           My Projects
-        </motion.h2>
+        </AnimatedTitle>
         <div className="w-full">
           <div className="flex flex-wrap justify-center gap-6 mb-4">
             {projects.map((project, index) => (

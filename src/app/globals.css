@@ -76,10 +76,6 @@
   transform: translate(-50%, -50%);
 }
 
-.title {
-  font-size: 10rem;
-}
-
 .cursor {
   background-color: #fff;
   height: 28px;

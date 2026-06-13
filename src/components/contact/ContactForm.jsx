@@ -1,6 +1,13 @@
+"use client";
 import { Toaster } from "react-hot-toast";
-import ContactModel from "./ContactModel";
+import dynamic from "next/dynamic";
 import Form from "./Form";
+
+// Lazy-load the 3D model so three.js/drei stays out of the initial bundle.
+const ContactModel = dynamic(() => import("./ContactModel"), {
+  ssr: false,
+  loading: () => null,
+});
 
 const ContactForm = () => {
   return (

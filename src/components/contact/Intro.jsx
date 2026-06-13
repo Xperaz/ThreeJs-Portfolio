@@ -1,6 +1,7 @@
 import CursorContext from "@/context/CursorContext";
 import { motion } from "framer-motion";
 import { useContext } from "react";
+import AnimatedTitle from "@/components/shared/AnimatedTitle";
 
 const Intro = () => {
   const { setCursorVariant } = useContext(CursorContext);
@@ -8,27 +9,13 @@ const Intro = () => {
   return (
     <div className="">
       <div className="flex flex-col items-start justify-center gap-1 mt-6 xl:mx-64 lg:mx-16 sm:mx-10 mx-4">
-        <motion.h2
-          initial={{
-            z: -500,
-            opacity: 0,
-            scale: 0.5,
-          }}
-          animate={{
-            z: 0,
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 1.5,
-            delay: 1,
-          }}
+        <AnimatedTitle
           className={`font-allison text-[45px] font-normal`}
           onMouseEnter={() => setCursorVariant("text")}
           onMouseLeave={() => setCursorVariant("default")}
         >
           Hire me
-        </motion.h2>
+        </AnimatedTitle>
         <motion.p
           initial={{
             x: -500,
